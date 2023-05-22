@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "574610653302",
+    "project_id": "book-reader-44148",
+    "storage_bucket": "book-reader-44148.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:574610653302:android:07d162166cf050871e9f57",
+        "android_client_info": {
+          "package_name": "uz.gita.a5.bookreader"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "574610653302-ru2nmvg5aat8hamntflif58qilmdphko.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYuCnXGITpMcI5tGIFO20lYjlgJgV0gYU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "574610653302-ru2nmvg5aat8hamntflif58qilmdphko.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

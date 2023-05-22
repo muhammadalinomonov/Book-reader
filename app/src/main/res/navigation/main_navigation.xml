@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation.xml"
+    app:startDestination="@id/homeFragment">
+
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="uz.gita.a5.bookreader.presentation.ui.home.HomeScreen"
+        android:label="HomeFragment"
+        tools:layout="@layout/screen_home">
+        <action
+            android:id="@+id/action_homeFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_readBookScreen"
+            app:destination="@id/readBookScreen" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="uz.gita.a5.bookreader.presentation.ui.saved.SavedScreen"
+        android:label="FavoriteFragment"
+        tools:layout="@layout/screen_saved">
+        <action
+            android:id="@+id/action_favoriteFragment_to_readBookScreen"
+            app:destination="@id/readBookScreen" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/exploreFragment"
+        android:name="uz.gita.a5.bookreader.presentation.ui.explore.ExploreScreen"
+        android:label="ExploreFragment"
+        tools:layout="@layout/screen_explore">
+        <action
+            android:id="@+id/action_exploreFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="uz.gita.a5.bookreader.presentation.ui.about.AboutScreen"
+        android:label="AboutFragment"
+        tools:layout="@layout/screen_about">
+        <argument
+            android:name="bookData"
+            app:argType="uz.gita.a5.bookreader.data.model.BookData" />
+        <action
+            android:id="@+id/action_aboutFragment_to_readBookScreen"
+            app:destination="@id/readBookScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/readBookScreen"
+        android:name="uz.gita.a5.bookreader.presentation.ui.readbook.ReadBookScreen"
+        android:label="ReadBookScreen"
+        tools:layout="@layout/screen_read_book" >
+        <argument
+            android:name="totalPage"
+            app:argType="integer" />
+        <argument
+            android:name="savedPage"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="bookName"
+            app:argType="string" />
+        <argument
+            android:name="imageUrl"
+            app:argType="string" />
+    </fragment>
+
+    <!--read-->
+    <!--<fragment
+        android:id="@+id/readBookFragment"
+        android:name="uz.gita.dima.kitapxana.presenter.ui.readbook.ReadBookFragment"
+        android:label="ReadBookFragment"
+        tools:layout="@layout/read_book_fragment">
+        <argument
+            android:name="savedPage"
+            app:argType="integer" />
+        <argument
+            android:name="totalPage"
+            app:argType="integer" />
+        <argument
+            android:name="bookName"
+            app:argType="string" />
+    </fragment>-->
+
+
+    <!--<fragment
+        android:id="@+id/homeScreen"
+        android:name="uz.gita.a5.bookreader.presentation.ui.home.HomeScreen"
+        android:label="HomeScreen"
+        tools:layout="@layout/screen_home">
+        <action
+            android:id="@+id/action_homeScreen_to_aboutScreen"
+            app:destination="@id/aboutScreen"/>
+    </fragment>
+    <fragment
+        tools:layout="@layout/screen_explore"
+        android:id="@+id/exploreScreen"
+        android:name="uz.gita.a5.bookreader.presentation.ui.explore.ExploreScreen"
+        android:label="ExploreScreen">
+        <action
+            android:id="@+id/action_exploreScreen_to_aboutScreen"
+            app:destination="@id/aboutScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutScreen"
+        android:name="uz.gita.a5.bookreader.presentation.ui.about.AboutScreen"
+        android:label="AboutScreen"
+        tools:layout="@layout/screen_about">
+        <argument
+            android:name="bookData"
+            app:argType="uz.gita.a5.bookreader.data.model.BookData" />
+    </fragment>
+    <fragment
+        android:id="@+id/savedScreen"
+        android:name="uz.gita.a5.bookreader.presentation.ui.saved.SavedScreen"
+        android:label="SavedScreen"
+        tools:layout="@layout/screen_saved" />-->
+</navigation>

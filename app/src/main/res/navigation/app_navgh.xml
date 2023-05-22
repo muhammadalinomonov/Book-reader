@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navgh"
+    app:startDestination="@id/splashScreen">
+
+    <fragment
+        tools:layout="@layout/splash_screen"
+        android:id="@+id/splashScreen"
+        android:name="uz.gita.a5.bookreader.presentation.ui.splash.SplashScreen"
+        android:label="SplashScreen" >
+        <action
+            android:id="@+id/action_splashScreen_to_mainScreen"
+            app:destination="@id/mainScreen"
+            app:popUpTo="@id/splashScreen"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashScreen_to_viewPager"
+            app:destination="@id/viewPager"
+            app:popUpTo="@id/splashScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/screen_main"
+        android:id="@+id/mainScreen"
+        android:name="uz.gita.a5.bookreader.presentation.ui.main.MainScreen"
+        android:label="MainScreen" />
+    <fragment
+        tools:layout="@layout/screen_page"
+        android:id="@+id/viewPager"
+        android:name="uz.gita.a5.bookreader.presentation.pager.MyViewPager"
+        android:label="ViewPager" >
+        <action
+            android:id="@+id/action_viewPager_to_mainScreen"
+            app:destination="@id/mainScreen"
+            app:popUpTo="@id/viewPager"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

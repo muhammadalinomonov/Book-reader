@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "uz.gita.a5.bookreader.app-mergeDebugResources-56:/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\TUF\\.gradle\\caches\\transforms-3\\592e692fe7960d60c3ed72fa29225bb7\\transformed\\appcompat-1.6.1\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        }
+    ]
+}
