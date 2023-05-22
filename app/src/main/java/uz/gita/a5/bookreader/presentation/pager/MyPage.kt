@@ -29,19 +29,19 @@ class MyPage : Fragment() {
         val pos = arguments?.getInt("POS", 0)
         when (pos) {
             0 -> {
-                imageView.setImageResource(R.drawable.image_1)
+                imageView.setImageResource(R.drawable.page_1)
                 textTitle.text = "Title 1"
                 textDescription.text = "Description 1"
             }
 
             1 -> {
-                imageView.setImageResource(R.drawable.image_2)
+                imageView.setImageResource(R.drawable.page_2)
                 textTitle.text = "Title 2"
                 textDescription.text = "Description 2"
             }
 
             else -> {
-                imageView.setImageResource(R.drawable.image_3)
+                imageView.setImageResource(R.drawable.page_3)
                 textTitle.text = "Title 3"
                 textDescription.text = "Description 3"
             }

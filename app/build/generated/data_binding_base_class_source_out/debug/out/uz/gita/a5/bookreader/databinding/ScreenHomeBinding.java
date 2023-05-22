@@ -7,7 +7,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
-import android.widget.SearchView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -43,9 +42,6 @@ public final class ScreenHomeBinding implements ViewBinding {
   public final RecyclerView recycler;
 
   @NonNull
-  public final SearchView searchView;
-
-  @NonNull
   public final TextView textBookName;
 
   @NonNull
@@ -54,8 +50,7 @@ public final class ScreenHomeBinding implements ViewBinding {
   private ScreenHomeBinding(@NonNull ConstraintLayout rootView, @NonNull TextView dddd,
       @NonNull ConstraintLayout homeSecondLayout, @NonNull ImageView lastBookImage,
       @NonNull LinearLayout linear2, @NonNull ProgressBar progressBar3,
-      @NonNull RecyclerView recycler, @NonNull SearchView searchView,
-      @NonNull TextView textBookName, @NonNull TextView txt) {
+      @NonNull RecyclerView recycler, @NonNull TextView textBookName, @NonNull TextView txt) {
     this.rootView = rootView;
     this.dddd = dddd;
     this.homeSecondLayout = homeSecondLayout;
@@ -63,7 +58,6 @@ public final class ScreenHomeBinding implements ViewBinding {
     this.linear2 = linear2;
     this.progressBar3 = progressBar3;
     this.recycler = recycler;
-    this.searchView = searchView;
     this.textBookName = textBookName;
     this.txt = txt;
   }
@@ -131,12 +125,6 @@ public final class ScreenHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.search_view;
-      SearchView searchView = ViewBindings.findChildViewById(rootView, id);
-      if (searchView == null) {
-        break missingId;
-      }
-
       id = R.id.text_book_name;
       TextView textBookName = ViewBindings.findChildViewById(rootView, id);
       if (textBookName == null) {
@@ -150,7 +138,7 @@ public final class ScreenHomeBinding implements ViewBinding {
       }
 
       return new ScreenHomeBinding((ConstraintLayout) rootView, dddd, homeSecondLayout,
-          lastBookImage, linear2, progressBar3, recycler, searchView, textBookName, txt);
+          lastBookImage, linear2, progressBar3, recycler, textBookName, txt);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

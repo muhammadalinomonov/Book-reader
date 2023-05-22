@@ -34,7 +34,7 @@ public final class ItemBookForExploreBinding implements ViewBinding {
   public final LinearLayout linear;
 
   @NonNull
-  public final LinearLayout linearStart;
+  public final CardView linearStart;
 
   @NonNull
   public final TextView percentage;
@@ -47,7 +47,7 @@ public final class ItemBookForExploreBinding implements ViewBinding {
 
   private ItemBookForExploreBinding(@NonNull CardView rootView, @NonNull ImageView bookImg,
       @NonNull TextView btnDownload, @NonNull TextView continueRead, @NonNull LinearLayout linear,
-      @NonNull LinearLayout linearStart, @NonNull TextView percentage, @NonNull TextView textAuthor,
+      @NonNull CardView linearStart, @NonNull TextView percentage, @NonNull TextView textAuthor,
       @NonNull TextView textBookName) {
     this.rootView = rootView;
     this.bookImg = bookImg;
@@ -112,7 +112,7 @@ public final class ItemBookForExploreBinding implements ViewBinding {
       }
 
       id = R.id.linearStart;
-      LinearLayout linearStart = ViewBindings.findChildViewById(rootView, id);
+      CardView linearStart = ViewBindings.findChildViewById(rootView, id);
       if (linearStart == null) {
         break missingId;
       }

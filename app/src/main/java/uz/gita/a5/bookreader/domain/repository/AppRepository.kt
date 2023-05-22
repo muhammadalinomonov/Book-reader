@@ -9,5 +9,5 @@ interface AppRepository {
     suspend  fun getBooksByCategory(): Result<List<BookData>>
     fun downloadBookByUrl(context: Context, bookData: BookData): Flow<Result<String>>
     fun getSavedBooks(context: Context): Flow<Result<List<BookData>>>
-    fun getSearchBook(name:String):Result<List<BookData>>
+    fun getSearchBook(name:String):Flow<Result<List<BookData>>>
 }

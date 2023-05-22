@@ -113,30 +113,59 @@
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_marginStart="16dp"
-                android:id="@+id/txtAuthor"
-                android:layout_width="match_parent"
+                android:id="@+id/author"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textStyle="bold"
                 android:layout_marginVertical="8dp"
-                android:text="Book author: "
+                android:text="Author: "
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/txtName" />
+
+            <TextView
+                android:text="Hbjhbhj jhghgb"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@id/author"
+                android:id="@+id/txtAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@+id/author"/>
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_margin="16dp"
-                android:id="@+id/txtGenre"
-                android:layout_width="match_parent"
+                android:id="@+id/genre"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="8dp"
-                android:text="Book genre: "
+                android:text="Genre: "
+                android:textStyle="bold"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/txtAuthor" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ssfsdfsdf"
+                android:textSize="18sp"
+                android:id="@+id/txtGenre"
+                app:layout_constraintStart_toEndOf="@id/genre"
+                app:layout_constraintTop_toTopOf="@+id/genre"/>
 
+            <TextView
+
+                android:id="@+id/about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/txtGenre"
+                android:text="About:"
+                android:textColor="@color/black"
+                android:layout_marginTop="4dp"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@id/genre"
+                android:textStyle="bold"/>
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_marginHorizontal="16dp"
                 android:justificationMode="inter_word"
@@ -150,7 +179,7 @@
                 android:textSize="18sp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txtGenre" />
+                app:layout_constraintTop_toBottomOf="@id/about" />
 
 
 

@@ -21,7 +21,8 @@
         <item>@font/jost_semibold</item>
     </array>
     <color name="black">#FF000000</color>
-    <color name="gray">#242B2E</color>
+    <color name="gray">#05202C</color>
+    <color name="kk">#050325</color>
     <color name="orange">#FF9800</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">Book reader</string>

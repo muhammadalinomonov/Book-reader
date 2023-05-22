@@ -31,9 +31,9 @@ class AboutScreen : Fragment(R.layout.screen_about) {
         val book = File(requireContext().filesDir, bookData.bookName)
 
         binding.apply {
-            txtName.text = "Book Name: ${bookData.bookName}"
-            txtAuthor.text = "Book Author: ${bookData.author}"
-            txtGenre.text = "Book Genre: ${bookData.genre}"
+            txtName.text = bookData.bookName
+            txtAuthor.text = "Author: ${bookData.author}"
+            txtGenre.text = "Genre: ${bookData.genre}"
             txtDescription.text = bookData.description
 //            txtStar.text = "Book Stars: ${bookData.startSize}"
 

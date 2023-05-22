@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Toast
+import androidx.core.widget.doAfterTextChanged
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
@@ -29,7 +30,12 @@ class ExploreScreen : Fragment(R.layout.screen_explore) {
         binding.apply {
             recycler.layoutManager = GridLayoutManager(requireContext(), 2)
             recycler.adapter = adapter
+
+            searchField.doAfterTextChanged {
+                viewModel.getBySearch(searchField.text.toString())
+            }
         }
+
 
         adapter.setClickBookListener {
             val action = ExploreScreenDirections.actionExploreFragmentToAboutFragment(it)

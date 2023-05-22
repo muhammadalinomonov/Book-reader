@@ -37,6 +37,7 @@
             tools:text="Aruvi The Horseman" />
 
         <LinearLayout
+            android:background="@drawable/bg_linear"
             android:layout_marginBottom="4dp"
             android:id="@+id/linearStart"
             android:layout_width="match_parent"
@@ -72,8 +73,8 @@
                 android:textSize="14sp"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="3"
-                android:text="65%"
+                android:layout_weight="2.5"
+                android:text="65.8%"
                 android:gravity="center"
                 android:textColor="@color/white"
                 android:background="#FFC107"/>

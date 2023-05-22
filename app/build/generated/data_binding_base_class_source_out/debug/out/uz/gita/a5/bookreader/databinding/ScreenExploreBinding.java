@@ -4,6 +4,7 @@ package uz.gita.a5.bookreader.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ProgressBar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -33,14 +34,18 @@ public final class ScreenExploreBinding implements ViewBinding {
   @NonNull
   public final RecyclerView recycler;
 
+  @NonNull
+  public final EditText searchField;
+
   private ScreenExploreBinding(@NonNull ConstraintLayout rootView, @NonNull ConstraintLayout appBar,
       @NonNull AppCompatImageView btnNotification, @NonNull ProgressBar progressBar,
-      @NonNull RecyclerView recycler) {
+      @NonNull RecyclerView recycler, @NonNull EditText searchField) {
     this.rootView = rootView;
     this.appBar = appBar;
     this.btnNotification = btnNotification;
     this.progressBar = progressBar;
     this.recycler = recycler;
+    this.searchField = searchField;
   }
 
   @Override
@@ -94,8 +99,14 @@ public final class ScreenExploreBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.search_field;
+      EditText searchField = ViewBindings.findChildViewById(rootView, id);
+      if (searchField == null) {
+        break missingId;
+      }
+
       return new ScreenExploreBinding((ConstraintLayout) rootView, appBar, btnNotification,
-          progressBar, recycler);
+          progressBar, recycler, searchField);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

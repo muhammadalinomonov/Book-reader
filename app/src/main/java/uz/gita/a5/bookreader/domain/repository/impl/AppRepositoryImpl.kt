@@ -120,7 +120,32 @@ class AppRepositoryImpl private constructor() : AppRepository {
             awaitClose()
         }.flowOn(Dispatchers.IO)
 
-    override fun getSearchBook(name: String): Result<List<BookData>> {
-        TODO("Not yet  implemented")
+    override fun getSearchBook(name: String): Flow<Result<List<BookData>>> = callbackFlow {
+        db.collection("books")
+            .get()
+            .addOnSuccessListener { querySnapshot ->
+                val dataList = arrayListOf<BookData>()
+
+                querySnapshot.forEach {
+                    val bookData = BookData(
+                        it.get("author") as String,
+                        it.get("bookName") as String,
+                        it.get("bookUrl") as String,
+                        it.get("genre") as String,
+                        it.get("imageUrl") as String,
+                        it.get("page") as Long,
+                        it.get("path") as String,
+                        it.get("startSize") as String,
+                        it.get("description") as String
+                    )
+
+                    if (bookData.bookName.startsWith(name) || bookData.author.startsWith(name))
+                        dataList.add(bookData)
+                }
+                trySend(Result.success(dataList))
+            }
+            .addOnFailureListener { trySend(Result.failure(it)) }
+
+        awaitClose()
     }
 }

@@ -29,5 +29,18 @@ class ExploreViewModelImpl : ViewModel(), ExploreViewModel {
             }
         }.launchIn(viewModelScope)
     }
+
+    override fun getBySearch(name: String) {
+        repository.getSearchBook(name).onEach {
+            it.onSuccess {
+                booksLiveData.value = it
+            }
+            it.onFailure {
+                errorLiveData.value = it.message
+            }
+        }.launchIn(viewModelScope)
+    }
+
+
 }
 

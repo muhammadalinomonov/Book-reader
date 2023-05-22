@@ -1487,6 +1487,7 @@ color foreground_material_light
 color gray
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color kk
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
 color m3_assist_chip_stroke_color
@@ -3002,8 +3003,12 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable bell
 drawable bg_for_edit
+drawable bg_linear
 drawable book
 drawable book1984
+drawable bookmark
+drawable bookmark_2
+drawable bookmark_selector
 drawable books
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -3043,8 +3048,14 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable dot_background
 drawable download
+drawable explore
+drawable explore2
+drawable explore_selector
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable home_1
+drawable home_2
+drawable home_selector
 drawable ic_arrow_back
 drawable ic_arrow_back_black_24
 drawable ic_back
@@ -3152,8 +3163,12 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable page_1
+drawable page_2
+drawable page_3
 drawable paper
 drawable ribbon
+drawable search
 drawable search_bg
 drawable splash_png
 drawable spring_dot_background
@@ -3161,6 +3176,7 @@ drawable spring_dot_stroke_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable unnamed
 drawable worm_dot_background
 drawable worm_dot_stroke_background
 font amiko_semibold
@@ -3181,6 +3197,7 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
+id about
 id aboutFragment
 id accelerate
 id accessibility_action_clickable_span
@@ -3266,6 +3283,7 @@ id app_navgh
 id arc
 id asConfigured
 id async
+id author
 id auto
 id autoComplete
 id autoCompleteToEnd
@@ -3405,6 +3423,7 @@ id forever
 id fragment_container_view_tag
 id frost
 id fullscreen_header
+id genre
 id ghost_view
 id ghost_view_holder
 id glide_custom_view_target_tag
@@ -3601,11 +3620,11 @@ id search_bar_text_view
 id search_button
 id search_close_btn
 id search_edit_frame
+id search_field
 id search_go_btn
 id search_mag_icon
 id search_plate
 id search_src_text
-id search_view
 id search_view_background
 id search_view_clear_button
 id search_view_content_container

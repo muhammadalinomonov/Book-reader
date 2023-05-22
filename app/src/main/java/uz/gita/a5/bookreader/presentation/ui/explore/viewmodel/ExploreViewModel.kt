@@ -8,4 +8,5 @@ interface ExploreViewModel {
     val booksLiveData: LiveData<List<BookData>>
 
     fun getAll()
+    fun getBySearch(name:String)
 }

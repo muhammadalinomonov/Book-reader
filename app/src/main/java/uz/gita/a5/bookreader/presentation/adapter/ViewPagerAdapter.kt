@@ -19,17 +19,20 @@ class ViewPagerAdapter : Adapter<ViewPagerAdapter.MyViewHolder>() {
         fun bind(position: Int){
             when(position){
                 0 -> {
-                    binding.image.setImageResource(R.drawable.image_1)
-
-                    //
+                    binding.image.setImageResource(R.drawable.page_1)
+                    binding.textTitle.text = "Convenient use"
+                    binding.textDescription.text = "Everything for comfortable reading of your favourite books."
                 }
                 1 -> {
-                    binding.image.setImageResource(R.drawable.ic_saved)
-                    //
+                    binding.image.setImageResource(R.drawable.page_2)
+                    binding.textTitle.text = "Offline reading"
+                    binding.textDescription.text = "Different formats for reading to books."
+
                 }
                 2 -> {
-                    binding.image.setImageResource(R.drawable.ic_download)
-
+                    binding.image.setImageResource(R.drawable.page_3)
+                    binding.textTitle.text = "Search"
+                    binding.textDescription.text = "Easy search by all titles and authors."
                     //
                 }
 

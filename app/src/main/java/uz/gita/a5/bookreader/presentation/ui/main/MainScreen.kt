@@ -17,8 +17,7 @@ class MainScreen : Fragment(R.layout.screen_main) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        binding.bottomNavigationView.itemBackground = null
+        binding.bottomNavigationView.itemIconTintList = null
 
         val navController =
             (childFragmentManager.findFragmentById(R.id.main_fragmentContainerView) as NavHostFragment)
