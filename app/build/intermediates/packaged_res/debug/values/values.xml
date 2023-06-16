@@ -38,6 +38,7 @@
     <style name="Base.Theme.BookReader" parent="Theme.Material3.DayNight.NoActionBar">
         
         
+        <item name="android:statusBarColor">#105B7C</item>
     </style>
     <style name="Theme.BookReader" parent="Base.Theme.BookReader"/>
 </resources>

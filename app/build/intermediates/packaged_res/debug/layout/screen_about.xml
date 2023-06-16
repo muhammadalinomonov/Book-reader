@@ -125,34 +125,37 @@
                 app:layout_constraintTop_toBottomOf="@id/txtName" />
 
             <TextView
-                android:text="Hbjhbhj jhghgb"
-                android:textSize="18sp"
-                app:layout_constraintStart_toEndOf="@id/author"
                 android:id="@+id/txtAuthor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toTopOf="@+id/author"/>
+                android:text="Hbjhbhj jhghgb"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/author"
+                app:layout_constraintStart_toEndOf="@id/author"
+                app:layout_constraintTop_toTopOf="@+id/author" />
 
             <androidx.appcompat.widget.AppCompatTextView
-                android:layout_margin="16dp"
                 android:id="@+id/genre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="16dp"
                 android:layout_marginVertical="8dp"
                 android:text="Genre: "
-                android:textStyle="bold"
                 android:textColor="@color/black"
                 android:textSize="20sp"
+                android:textStyle="bold"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txtAuthor" />
+                app:layout_constraintTop_toBottomOf="@+id/author" />
+
             <TextView
+                android:id="@+id/txtGenre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ssfsdfsdf"
                 android:textSize="18sp"
-                android:id="@+id/txtGenre"
+                app:layout_constraintBottom_toBottomOf="@+id/genre"
                 app:layout_constraintStart_toEndOf="@id/genre"
-                app:layout_constraintTop_toTopOf="@+id/genre"/>
+                app:layout_constraintTop_toTopOf="@+id/genre" />
 
             <TextView
 

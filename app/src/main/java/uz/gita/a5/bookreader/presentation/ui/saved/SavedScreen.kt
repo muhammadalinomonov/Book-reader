@@ -41,10 +41,10 @@ class SavedScreen : Fragment(R.layout.screen_saved) {
                 requireContext().getString(R.string.delete, book.bookName)
             dialog.getWindow()?.setBackgroundDrawableResource(android.R.color.transparent)
 
-            dialog.findViewById<Button>(R.id.btnNo).setOnClickListener {
+            dialog.findViewById<TextView>(R.id.btnNo).setOnClickListener {
                 dialog.dismiss()
             }
-            dialog.findViewById<Button>(R.id.btnYes).setOnClickListener {
+            dialog.findViewById<TextView>(R.id.btnYes).setOnClickListener {
                 viewModel.getAllSavedBook(requireContext())
 
                 sharedPref.savedPageByBookName(book.bookName, 0)
@@ -82,7 +82,7 @@ class SavedScreen : Fragment(R.layout.screen_saved) {
                     200,
                     it.bookName,
                     it.imageUrl,
-                    sharedPref.savedPage
+                    sharedPref.getSavedPageByBookName(it.bookName)
                 )
             findNavController().navigate(action)
         }

@@ -4,9 +4,11 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.AnimationUtils
 import androidx.recyclerview.widget.RecyclerView.Adapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.bumptech.glide.Glide
+import uz.gita.a5.bookreader.R
 import uz.gita.a5.bookreader.data.model.BookData
 import uz.gita.a5.bookreader.data.source.local.impl.MySharedPrefImpl
 import uz.gita.a5.bookreader.databinding.ItemBookBinding
@@ -89,6 +91,7 @@ class HorizontalExploreAdapter : Adapter<HorizontalExploreAdapter.ItemViewHolder
     override fun getItemCount(): Int = list.size
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
+//        holder.itemView.animation = AnimationUtils.loadAnimation(holder.itemView.context, R.anim.animatsiya)
         holder.bind(list[position])
     }
 }

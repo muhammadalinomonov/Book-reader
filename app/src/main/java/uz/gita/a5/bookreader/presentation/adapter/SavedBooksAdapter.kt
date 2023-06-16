@@ -2,10 +2,12 @@ package uz.gita.a5.bookreader.presentation.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.view.animation.AnimationUtils
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.bumptech.glide.Glide
+import uz.gita.a5.bookreader.R
 import uz.gita.a5.bookreader.data.model.BookData
 import uz.gita.a5.bookreader.data.source.local.impl.MySharedPrefImpl
 import uz.gita.a5.bookreader.databinding.ItemSavedBookBinding
@@ -67,6 +69,7 @@ class SavedBooksAdapter : ListAdapter<BookData, SavedBooksAdapter.SavedViewHolde
         )
 
     override fun onBindViewHolder(holder: SavedViewHolder, position: Int) {
+        holder.itemView.animation = AnimationUtils.loadAnimation(holder.itemView.context, R.anim.animatsiya)
         holder.bind(getItem(position))
     }
 }

@@ -3,9 +3,11 @@ package uz.gita.a5.bookreader.presentation.adapter
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.view.animation.AnimationUtils
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView.Adapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
+import uz.gita.a5.bookreader.R
 import uz.gita.a5.bookreader.data.model.BookData
 import uz.gita.a5.bookreader.data.model.CategoryData
 import uz.gita.a5.bookreader.databinding.VerticalItemBinding
@@ -60,6 +62,7 @@ class HomeAdapter : Adapter<HomeAdapter.ItemViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
+        holder.itemView.animation = AnimationUtils.loadAnimation(holder.itemView.context, R.anim.animatsiya)
         holder.bind(list[position])
     }
 

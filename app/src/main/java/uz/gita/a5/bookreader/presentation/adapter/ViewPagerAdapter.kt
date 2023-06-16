@@ -3,6 +3,7 @@ package uz.gita.a5.bookreader.presentation.adapter
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.view.animation.AnimationUtils
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
@@ -47,6 +48,7 @@ class ViewPagerAdapter : Adapter<ViewPagerAdapter.MyViewHolder>() {
     override fun getItemCount(): Int = 3
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
+        holder.itemView.animation = AnimationUtils.loadAnimation(holder.itemView.context, R.anim.animatsiya)
         holder.bind(position)
     }
 

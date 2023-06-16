@@ -15,7 +15,6 @@ import kotlinx.coroutines.withContext
 import uz.gita.a5.bookreader.data.model.BookData
 import uz.gita.a5.bookreader.domain.repository.AppRepository
 import java.io.File
-import java.lang.Exception
 
 class AppRepositoryImpl private constructor() : AppRepository {
 
@@ -24,7 +23,6 @@ class AppRepositoryImpl private constructor() : AppRepository {
 
     companion object {
         private lateinit var instance: AppRepository
-
         fun getInstance(): AppRepository {
             if (!(::instance.isInitialized)) {
                 instance = AppRepositoryImpl()
@@ -38,7 +36,6 @@ class AppRepositoryImpl private constructor() : AppRepository {
             .get()
             .addOnSuccessListener { querySnapshot ->
                 val dataList = arrayListOf<BookData>()
-
                 querySnapshot.forEach {
                     val bookData = BookData(
                         it.get("author") as String,
@@ -51,13 +48,11 @@ class AppRepositoryImpl private constructor() : AppRepository {
                         it.get("startSize") as String,
                         it.get("description") as String
                     )
-
                     dataList.add(bookData)
                 }
                 trySend(Result.success(dataList))
             }
             .addOnFailureListener { trySend(Result.failure(it)) }
-
         awaitClose()
     }.flowOn(Dispatchers.IO)
 
@@ -77,9 +72,7 @@ class AppRepositoryImpl private constructor() : AppRepository {
             } catch (e: Exception) {
                 return@withContext Result.failure(e)
             }
-
         }
-
 
     override fun downloadBookByUrl(context: Context, bookData: BookData): Flow<Result<String>> =
         callbackFlow<Result<String>> {
@@ -145,7 +138,6 @@ class AppRepositoryImpl private constructor() : AppRepository {
                 trySend(Result.success(dataList))
             }
             .addOnFailureListener { trySend(Result.failure(it)) }
-
         awaitClose()
     }
 }

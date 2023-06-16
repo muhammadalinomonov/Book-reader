@@ -1,5 +1,7 @@
 R_DEF: Internal format may change without notice
 local
+anim anim_rv
+anim animatsiya
 array com_google_android_gms_fonts_certs
 array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
@@ -10,6 +12,7 @@ color kk
 color orange
 color white
 drawable bell
+drawable bg_for_button
 drawable bg_for_edit
 drawable bg_linear
 drawable book

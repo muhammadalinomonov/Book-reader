@@ -89,50 +89,7 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!--<LinearLayout
-            android:background="@drawable/bg_linear"
-            android:layout_marginBottom="4dp"
-            android:id="@+id/linearStart"
-            android:layout_width="match_parent"
-            android:layout_height="44dp"
-            android:layout_marginHorizontal="16dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:orientation="horizontal">
-            <TextView
-                android:id="@+id/btnDownload"
-                android:visibility="gone"
-                android:gravity="center"
-                android:textSize="22sp"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                android:background="#101E6E"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Get started"/>
-            <TextView
-                android:textColor="@color/white"
-                android:background="#FF9800"
-                android:id="@+id/continueRead"
-                android:textStyle="bold"
-                android:textSize="14sp"
-                android:gravity="center"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="6"
-                android:text="Continue reading"/>
-            <TextView
-                android:id="@+id/percentage"
-                android:textStyle="bold"
-                android:textSize="14sp"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="3.5"
-                android:text="65%"
-                android:gravity="center"
-                android:textColor="@color/white"
-                android:background="#FFC107"/>
 
-        </LinearLayout>-->
 
         <LinearLayout
             android:id="@+id/linear"

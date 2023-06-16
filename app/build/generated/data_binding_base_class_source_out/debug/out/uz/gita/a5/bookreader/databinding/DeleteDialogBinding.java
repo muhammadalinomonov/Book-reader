@@ -4,7 +4,6 @@ package uz.gita.a5.bookreader.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,16 +20,16 @@ public final class DeleteDialogBinding implements ViewBinding {
   private final CardView rootView;
 
   @NonNull
-  public final Button btnNo;
+  public final TextView btnNo;
 
   @NonNull
-  public final Button btnYes;
+  public final TextView btnYes;
 
   @NonNull
   public final TextView title;
 
-  private DeleteDialogBinding(@NonNull CardView rootView, @NonNull Button btnNo,
-      @NonNull Button btnYes, @NonNull TextView title) {
+  private DeleteDialogBinding(@NonNull CardView rootView, @NonNull TextView btnNo,
+      @NonNull TextView btnYes, @NonNull TextView title) {
     this.rootView = rootView;
     this.btnNo = btnNo;
     this.btnYes = btnYes;
@@ -65,13 +64,13 @@ public final class DeleteDialogBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.btnNo;
-      Button btnNo = ViewBindings.findChildViewById(rootView, id);
+      TextView btnNo = ViewBindings.findChildViewById(rootView, id);
       if (btnNo == null) {
         break missingId;
       }
 
       id = R.id.btnYes;
-      Button btnYes = ViewBindings.findChildViewById(rootView, id);
+      TextView btnYes = ViewBindings.findChildViewById(rootView, id);
       if (btnYes == null) {
         break missingId;
       }

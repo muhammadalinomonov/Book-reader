@@ -8,6 +8,10 @@
         "source": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-main-60:\\drawable\\page_3.png"
     },
     {
+        "merged": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-merged_res-58:\\anim_anim_rv.xml.flat",
+        "source": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-main-60:\\anim\\anim_rv.xml"
+    },
+    {
         "merged": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-merged_res-58:\\drawable_explore_selector.xml.flat",
         "source": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-main-60:\\drawable\\explore_selector.xml"
     },
@@ -66,6 +70,10 @@
     {
         "merged": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-merged_res-58:\\drawable_bg_linear.xml.flat",
         "source": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-main-60:\\drawable\\bg_linear.xml"
+    },
+    {
+        "merged": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-merged_res-58:\\anim_animatsiya.xml.flat",
+        "source": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-main-60:\\anim\\animatsiya.xml"
     },
     {
         "merged": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-merged_res-58:\\mipmap-mdpi_ic_launcher.webp.flat",
@@ -128,12 +136,12 @@
         "source": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-main-60:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-merged_res-58:\\drawable_ic_checked.png.flat",
-        "source": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-main-60:\\drawable\\ic_checked.png"
-    },
-    {
         "merged": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-merged_res-58:\\drawable_home_selector.xml.flat",
         "source": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-main-60:\\drawable\\home_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-merged_res-58:\\drawable_ic_checked.png.flat",
+        "source": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-main-60:\\drawable\\ic_checked.png"
     },
     {
         "merged": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-merged_res-58:\\drawable_bell.png.flat",
@@ -168,16 +176,20 @@
         "source": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-main-60:\\drawable\\ic_download.xml"
     },
     {
-        "merged": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-merged_res-58:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-main-60:\\mipmap-xxhdpi\\ic_launcher.webp"
-    },
-    {
         "merged": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-merged_res-58:\\drawable_unnamed.png.flat",
         "source": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-main-60:\\drawable\\unnamed.png"
     },
     {
+        "merged": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-merged_res-58:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-main-60:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
         "merged": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-merged_res-58:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-main-60:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "uz.gita.a5.bookreader.app-merged_res-58:/layout_page.xml.flat",
+        "source": "uz.gita.a5.bookreader.app-main-60:/layout/page.xml"
     },
     {
         "merged": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-merged_res-58:\\mipmap-xhdpi_ic_launcher.webp.flat",
@@ -232,12 +244,12 @@
         "source": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-main-60:\\layout\\item_book.xml"
     },
     {
-        "merged": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-merged_res-58:\\drawable_bookmark_2.png.flat",
-        "source": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-main-60:\\drawable\\bookmark_2.png"
-    },
-    {
         "merged": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-merged_res-58:\\drawable_ic_bookmark.xml.flat",
         "source": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-main-60:\\drawable\\ic_bookmark.xml"
+    },
+    {
+        "merged": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-merged_res-58:\\drawable_bookmark_2.png.flat",
+        "source": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-main-60:\\drawable\\bookmark_2.png"
     },
     {
         "merged": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-merged_res-58:\\drawable_ic_star.xml.flat",
@@ -252,10 +264,6 @@
         "source": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-main-60:\\layout\\splash_screen.xml"
     },
     {
-        "merged": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-merged_res-58:\\drawable_home_selector.png.flat",
-        "source": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-main-60:\\drawable\\home_selector.png"
-    },
-    {
         "merged": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-merged_res-58:\\mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-main-60:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
@@ -264,12 +272,12 @@
         "source": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-main-60:\\drawable\\book.png"
     },
     {
-        "merged": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-merged_res-58:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-main-60:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-merged_res-58:\\drawable_bg_for_button.xml.flat",
+        "source": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-main-60:\\drawable\\bg_for_button.xml"
     },
     {
-        "merged": "uz.gita.a5.bookreader.app-merged_res-58:/layout_item_book_for_explore.xml.flat",
-        "source": "uz.gita.a5.bookreader.app-main-60:/layout/item_book_for_explore.xml"
+        "merged": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-merged_res-58:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-main-60:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
         "merged": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-merged_res-58:\\drawable_ic_arrow_back.xml.flat",
@@ -322,10 +330,6 @@
     {
         "merged": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-merged_res-58:\\font_athiti_medium.xml.flat",
         "source": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-main-60:\\font\\athiti_medium.xml"
-    },
-    {
-        "merged": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-merged_res-58:\\drawable_home.xml.flat",
-        "source": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-main-60:\\drawable\\home.xml"
     },
     {
         "merged": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-merged_res-58:\\layout_screen_saved.xml.flat",

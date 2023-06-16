@@ -19,6 +19,7 @@
         app:navGraph="@navigation/main_navigation" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        app:labelVisibilityMode="unlabeled"
         style="@style/Widget.Design.BottomNavigationView"
         app:itemHorizontalTranslationEnabled="true"
         app:itemIconTint="@color/gray"
