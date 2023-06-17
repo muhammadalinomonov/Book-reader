@@ -56,6 +56,9 @@ class ExploreAdapter : ListAdapter<BookData, ExploreAdapter.ViewHolder>(diffdUti
 
                     var foiz = defaultPage.toFloat() / book.page.toInt() * 100
                     foiz -= (foiz % 0.1).toFloat()
+                    if (foiz > 99){
+                        foiz = 100f
+                    }
                     percentage.text = "$foiz %"
                     btnDownload.visibility = View.GONE
                 }

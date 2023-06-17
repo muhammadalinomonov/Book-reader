@@ -16,6 +16,7 @@
         android:textStyle="bold" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginBottom="4dp"
         android:id="@+id/horizontal_rv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

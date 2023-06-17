@@ -52,23 +52,16 @@ class HorizontalExploreAdapter : Adapter<HorizontalExploreAdapter.ItemViewHolder
                     var foiz = defaultPage.toFloat() / book.page * 100
                     Log.d("PPP", "$defaultPage / ${book.page}")
                     foiz -= (foiz % 0.1).toFloat()
+                    if (foiz > 99){
+                        foiz = 100f
+                    }
                     percentage.text = "$foiz %"
                     btnDownload.visibility = View.GONE
                 }
                 linearStart.setOnClickListener {
                     clickListener?.invoke(book)
                 }
-                /* if (sharesPref.getSavedPageByBookName(bookData.bookName) == 0) {
-                     continueRead.visibility = View.GONE
-                     percentage.visibility = View.GONE
-                     btnDownload.visibility = View.VISIBLE
-                 }else{
-                     continueRead.visibility = View.VISIBLE
-                     percentage.visibility = View.VISIBLE
-                     btnDownload.visibility = View.GONE
-                 }
-                 textBookName.text = bookData.bookName
-                 textAuthor.text = bookData.author*/
+
                 Glide.with(binding.root.context).load(book.imageUrl)
                     .into(bookImg)
             }

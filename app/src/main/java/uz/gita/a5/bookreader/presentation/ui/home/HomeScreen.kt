@@ -56,7 +56,7 @@ class HomeScreen : Fragment(R.layout.screen_home) {
                     .into(lastBookImage)
 
                 progressBar3.max = sharedPref.totalPage
-                progressBar3.progress = sharedPref.savedPage
+                progressBar3.progress = sharedPref.getSavedPageByBookName(sharedPref.bookName!!)
 
                 Log.d("PPP", "${sharedPref.savedPage}/${sharedPref.totalPage}")
                 Log.d("PPP", "${progressBar3.progress}/${progressBar3.max}")

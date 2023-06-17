@@ -1,5 +1,6 @@
 package uz.gita.a5.bookreader.presentation.adapter
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.view.animation.AnimationUtils
@@ -44,9 +45,10 @@ class SavedBooksAdapter : ListAdapter<BookData, SavedBooksAdapter.SavedViewHolde
                 txtTitle.text = bookData.bookName
                 Glide.with(itemView.context).load(bookData.imageUrl).into(imgIcon)
 
-                progress.progress = sharedPref.getSavedPageByBookName(bookData.bookName)
                 progress.max = bookData.page.toInt()
+                progress.progress = sharedPref.getSavedPageByBookName(bookData.bookName)
 
+                Log.d("AAA", "progress -> ${progress.progress} / ${progress.max}")
                 root.setOnClickListener {
                     clickListener.invoke(bookData)
                 }

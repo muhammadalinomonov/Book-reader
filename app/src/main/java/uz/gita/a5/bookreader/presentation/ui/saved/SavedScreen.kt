@@ -98,7 +98,7 @@ class SavedScreen : Fragment(R.layout.screen_saved) {
                     txtNoBookTitle.visibility = View.GONE
                 }
             }
-            Log.d("TTT", "saved l${it.size.toString()}")
+            Log.d("TTT", "saved ${it.size}")
             adapter.submitList(it)
         }
 
