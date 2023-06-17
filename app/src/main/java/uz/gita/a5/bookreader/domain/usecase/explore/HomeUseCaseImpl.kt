@@ -12,11 +12,13 @@ class HomeUseCaseImpl(private val repository: AppRepository) : HomeUseCase {
 
         val result = repository.getBooksByCategory().map { bookDataList ->
             val fantasyData = bookDataList.filter { it.genre == "fantasy" }
+            val thrillerData = bookDataList.filter { it.genre == "thriller" }
             val psychologyData = bookDataList.filter { it.genre == "psychology" }
             val classicLiterature = bookDataList.filter { it.genre == "Classic Literature" }
 
             list.add(CategoryData("Fantasy", fantasyData))
             list.add(CategoryData("Psychology", psychologyData))
+            list.add(CategoryData("Thriller", thrillerData))
             list.add(CategoryData("Classic Literature", classicLiterature))
         }
 
