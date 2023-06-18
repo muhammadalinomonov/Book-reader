@@ -2125,6 +2125,7 @@ color primary_text_default_material_dark
 color primary_text_default_material_light
 color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
+color progress
 color ripple_material_dark
 color ripple_material_light
 color secondary_text_default_material_dark
@@ -3091,10 +3092,9 @@ drawable ic_person
 drawable ic_saved
 drawable ic_search_black_24
 drawable ic_star
-drawable image_1
-drawable image_2
-drawable image_3
 drawable img
+drawable img_2
+drawable img_4
 drawable m3_appbar_background
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -3282,6 +3282,7 @@ id animateToStart
 id antiClockwise
 id anticipate
 id appBar
+id appCompatImageView
 id app_navgh
 id arc
 id asConfigured
@@ -3589,7 +3590,6 @@ id position
 id postLayout
 id pressed
 id progress
-id progressBar
 id progressBar2
 id progressBar3
 id progress_circular

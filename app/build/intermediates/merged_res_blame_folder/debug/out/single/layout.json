@@ -12,12 +12,12 @@
         "source": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-main-60:\\layout\\item_page.xml"
     },
     {
-        "merged": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-mergeDebugResources-57:\\layout\\screen_saved.xml",
-        "source": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-main-60:\\layout\\screen_saved.xml"
+        "merged": "uz.gita.a5.bookreader.app-mergeDebugResources-57:/layout/item_book.xml",
+        "source": "uz.gita.a5.bookreader.app-main-60:/layout/item_book.xml"
     },
     {
-        "merged": "uz.gita.a5.bookreader.app-mergeDebugResources-57:/layout/vertical_item.xml",
-        "source": "uz.gita.a5.bookreader.app-main-60:/layout/vertical_item.xml"
+        "merged": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-mergeDebugResources-57:\\layout\\screen_saved.xml",
+        "source": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-main-60:\\layout\\screen_saved.xml"
     },
     {
         "merged": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-mergeDebugResources-57:\\layout\\page.xml",

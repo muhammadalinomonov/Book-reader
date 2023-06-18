@@ -2,14 +2,17 @@ package uz.gita.a5.bookreader.presentation.ui.saved
 
 import android.annotation.SuppressLint
 import android.app.Dialog
+import android.graphics.PorterDuff
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.core.content.ContextCompat
+import androidx.core.widget.ContentLoadingProgressBar
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import by.kirich1409.viewbindingdelegate.viewBinding
@@ -20,6 +23,7 @@ import uz.gita.a5.bookreader.presentation.adapter.SavedBooksAdapter
 import uz.gita.a5.bookreader.presentation.ui.saved.viewmodel.impl.SavedViewModelImpl
 import java.io.File
 
+
 class SavedScreen : Fragment(R.layout.screen_saved) {
     private val binding by viewBinding(ScreenSavedBinding::bind)
     private val viewModel by viewModels<SavedViewModelImpl>()
@@ -29,6 +33,18 @@ class SavedScreen : Fragment(R.layout.screen_saved) {
     @SuppressLint("NotifyDataSetChanged")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
+
+        val progressBar: ContentLoadingProgressBar = binding.progress
+        val progressDrawable = progressBar.indeterminateDrawable.mutate()
+        progressDrawable.setColorFilter(
+            ContextCompat.getColor(requireContext(), R.color.progress),
+            PorterDuff.Mode.SRC_IN
+        )
+        progressBar.indeterminateDrawable = progressDrawable
+
+
+
+        viewModel.loadingLiveData.observe(viewLifecycleOwner, loadingProgressBarObserver)
 
         viewModel.getAllSavedBook(requireContext())
         adapter.setDeleteClickListener {
@@ -106,4 +122,12 @@ class SavedScreen : Fragment(R.layout.screen_saved) {
             Toast.makeText(requireContext(), it, Toast.LENGTH_SHORT).show()
         }
     }
+    private val loadingProgressBarObserver = Observer<Boolean> {
+        if (it) {
+            binding.progress.show()
+        } else {
+            binding.progress.hide()
+        }
+    }
+
 }

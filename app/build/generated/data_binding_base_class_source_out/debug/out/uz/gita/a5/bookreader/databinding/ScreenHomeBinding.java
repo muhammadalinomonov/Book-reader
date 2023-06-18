@@ -11,6 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.widget.ContentLoadingProgressBar;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -36,6 +37,9 @@ public final class ScreenHomeBinding implements ViewBinding {
   public final LinearLayout linear2;
 
   @NonNull
+  public final ContentLoadingProgressBar progress;
+
+  @NonNull
   public final ProgressBar progressBar3;
 
   @NonNull
@@ -49,13 +53,15 @@ public final class ScreenHomeBinding implements ViewBinding {
 
   private ScreenHomeBinding(@NonNull ConstraintLayout rootView, @NonNull TextView dddd,
       @NonNull ConstraintLayout homeSecondLayout, @NonNull ImageView lastBookImage,
-      @NonNull LinearLayout linear2, @NonNull ProgressBar progressBar3,
-      @NonNull RecyclerView recycler, @NonNull TextView textBookName, @NonNull TextView txt) {
+      @NonNull LinearLayout linear2, @NonNull ContentLoadingProgressBar progress,
+      @NonNull ProgressBar progressBar3, @NonNull RecyclerView recycler,
+      @NonNull TextView textBookName, @NonNull TextView txt) {
     this.rootView = rootView;
     this.dddd = dddd;
     this.homeSecondLayout = homeSecondLayout;
     this.lastBookImage = lastBookImage;
     this.linear2 = linear2;
+    this.progress = progress;
     this.progressBar3 = progressBar3;
     this.recycler = recycler;
     this.textBookName = textBookName;
@@ -113,6 +119,12 @@ public final class ScreenHomeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.progress;
+      ContentLoadingProgressBar progress = ViewBindings.findChildViewById(rootView, id);
+      if (progress == null) {
+        break missingId;
+      }
+
       id = R.id.progressBar3;
       ProgressBar progressBar3 = ViewBindings.findChildViewById(rootView, id);
       if (progressBar3 == null) {
@@ -138,7 +150,7 @@ public final class ScreenHomeBinding implements ViewBinding {
       }
 
       return new ScreenHomeBinding((ConstraintLayout) rootView, dddd, homeSecondLayout,
-          lastBookImage, linear2, progressBar3, recycler, textBookName, txt);
+          lastBookImage, linear2, progress, progressBar3, recycler, textBookName, txt);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

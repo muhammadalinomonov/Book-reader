@@ -16,6 +16,7 @@ class HomeViewModelImpl(private val useCase: HomeUseCase) : ViewModel(), HomeVie
     //    private val repository: AppRepository = AppRepositoryImpl.getInstance()
     override val categoriesLiveData = MutableLiveData<List<CategoryData>>()
     override val errorLiveData = MutableLiveData<String>()
+    override val loadingLiveData = MutableLiveData<Boolean>()
 
 
     init {
@@ -23,21 +24,26 @@ class HomeViewModelImpl(private val useCase: HomeUseCase) : ViewModel(), HomeVie
     }
 
     override fun getBooksByCategoryData() {
+        loadingLiveData.value = true
         useCase.getBooksByCategoryData().onEach {
+
 
             Log.d("TTT", "getBooksByCategoryData viewmodel")
 
             it.onSuccess { list ->
+                loadingLiveData.value = false
                 Log.d("TTT", "onSuccess viewmodel")
                 categoriesLiveData.value = list
             }
             it.onFailure {
+                loadingLiveData.value = false
                 Log.d("TTT", "onFailure viewmodel")
                 errorLiveData.value = it.message
             }
         }.launchIn(viewModelScope)
     }
 
+    @Suppress("UNCHECKED_CAST")
     class Factory(private val useCase: HomeUseCase) : ViewModelProvider.Factory {
         override fun <T : ViewModel> create(modelClass: Class<T>): T {
             return HomeViewModelImpl(useCase) as T
@@ -62,4 +68,4 @@ override fun getBooksByCategoryData() {
             }
         }.launchIn(viewModelScope)
     }
-* */
+*/

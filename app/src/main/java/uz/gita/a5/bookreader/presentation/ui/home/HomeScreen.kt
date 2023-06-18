@@ -1,10 +1,13 @@
 package uz.gita.a5.bookreader.presentation.ui.home
 
 import android.annotation.SuppressLint
+import android.graphics.PorterDuff
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Toast
+import androidx.core.content.ContextCompat
+import androidx.core.widget.ContentLoadingProgressBar
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
@@ -38,6 +41,16 @@ class HomeScreen : Fragment(R.layout.screen_home) {
 
     @SuppressLint("SetTextI18n")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
+        val progressBar: ContentLoadingProgressBar = binding.progress
+        val progressDrawable = progressBar.indeterminateDrawable.mutate()
+        progressDrawable.setColorFilter(
+            ContextCompat.getColor(requireContext(), R.color.progress),
+            PorterDuff.Mode.SRC_IN
+        )
+        progressBar.indeterminateDrawable = progressDrawable
+
+        viewModel.loadingLiveData.observe(viewLifecycleOwner, loadingProgressBarObserver)
 
         viewModel.getBooksByCategoryData()
         viewModel.categoriesLiveData.observe(viewLifecycleOwner, categoriesData)
@@ -94,6 +107,13 @@ class HomeScreen : Fragment(R.layout.screen_home) {
 
     private val errorData = Observer<String> {
         Toast.makeText(requireContext(), it, Toast.LENGTH_SHORT).show()
+    }
+    private val loadingProgressBarObserver = Observer<Boolean> {
+        if (it) {
+            binding.progress.show()
+        } else {
+            binding.progress.hide()
+        }
     }
 
 }

@@ -19,23 +19,30 @@ class ExploreViewModelImpl : ViewModel(), ExploreViewModel {
     }
     override val errorLiveData = MutableLiveData<String>()
     override val booksLiveData = MutableLiveData<List<BookData>>()
+    override val loadingLiveData = MutableLiveData<Boolean>()
     override fun getAll() {
         repository.getAllBook().onEach {
+            loadingLiveData.value = true
             it.onSuccess {
+                loadingLiveData.value = false
                 booksLiveData.value = it
             }
             it.onFailure {
+                loadingLiveData.value = false
                 errorLiveData.value = it.message
             }
         }.launchIn(viewModelScope)
     }
 
     override fun getBySearch(name: String) {
+        loadingLiveData.value = true
         repository.getSearchBook(name).onEach {
             it.onSuccess {
+                loadingLiveData.value = false
                 booksLiveData.value = it
             }
             it.onFailure {
+                loadingLiveData.value = false
                 errorLiveData.value = it.message
             }
         }.launchIn(viewModelScope)

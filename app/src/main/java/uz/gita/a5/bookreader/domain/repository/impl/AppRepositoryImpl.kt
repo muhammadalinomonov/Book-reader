@@ -6,6 +6,7 @@ import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.Dispatchers.IO
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.callbackFlow
@@ -54,11 +55,11 @@ class AppRepositoryImpl private constructor() : AppRepository {
             }
             .addOnFailureListener { trySend(Result.failure(it)) }
         awaitClose()
-    }.flowOn(Dispatchers.IO)
+    }.flowOn(IO)
 
 
     override suspend fun getBooksByCategory(): Result<List<BookData>> =
-        withContext(Dispatchers.IO) {
+        withContext(IO) {
             try {
                 Log.d("TTT", "getBooksByCategory")
                 val books = db.collection("books").get().await()
@@ -89,7 +90,7 @@ class AppRepositoryImpl private constructor() : AppRepository {
                     }
             }
             awaitClose()
-        }.flowOn(Dispatchers.IO)
+        }.flowOn(IO)
 
     override fun getSavedBooks(context: Context): Flow<Result<List<BookData>>> =
         callbackFlow<Result<List<BookData>>> {
@@ -111,9 +112,9 @@ class AppRepositoryImpl private constructor() : AppRepository {
                     trySend(Result.failure(it))
                 }
             awaitClose()
-        }.flowOn(Dispatchers.IO)
+        }.flowOn(IO)
 
-    override fun getSearchBook(name: String): Flow<Result<List<BookData>>> = callbackFlow {
+    override fun getSearchBook(name: String): Flow<Result<List<BookData>>> = callbackFlow<Result<List<BookData>>> {
         db.collection("books")
             .get()
             .addOnSuccessListener { querySnapshot ->
@@ -139,5 +140,5 @@ class AppRepositoryImpl private constructor() : AppRepository {
             }
             .addOnFailureListener { trySend(Result.failure(it)) }
         awaitClose()
-    }
+    }.flowOn(IO)
 }

@@ -5,4 +5,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="gray">#05202C</color>
     <color name="orange">#FF9800</color>
+    <color name="progress">#2191F4</color>
 </resources>

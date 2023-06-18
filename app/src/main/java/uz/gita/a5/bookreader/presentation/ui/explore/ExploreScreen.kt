@@ -1,9 +1,12 @@
 package uz.gita.a5.bookreader.presentation.ui.explore
 
+import android.graphics.PorterDuff
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Toast
+import androidx.core.content.ContextCompat
+import androidx.core.widget.ContentLoadingProgressBar
 import androidx.core.widget.doAfterTextChanged
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
@@ -24,8 +27,18 @@ class ExploreScreen : Fragment(R.layout.screen_explore) {
     private val adapter by lazy { ExploreAdapter() }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
+        val progressBar: ContentLoadingProgressBar = binding.progress
+        val progressDrawable = progressBar.indeterminateDrawable.mutate()
+        progressDrawable.setColorFilter(
+            ContextCompat.getColor(requireContext(), R.color.progress),
+            PorterDuff.Mode.SRC_IN
+        )
+        progressBar.indeterminateDrawable = progressDrawable
+
         viewModel.booksLiveData.observe(viewLifecycleOwner, booksObserver)
         viewModel.errorLiveData.observe(viewLifecycleOwner, errorData)
+        viewModel.loadingLiveData.observe(viewLifecycleOwner, loadingProgressBarObserver)
 
         binding.apply {
             recycler.layoutManager = GridLayoutManager(requireContext(), 2)
@@ -50,5 +63,13 @@ class ExploreScreen : Fragment(R.layout.screen_explore) {
 
     private val errorData = Observer<String> {
         Toast.makeText(requireContext(), it, Toast.LENGTH_SHORT).show()
+    }
+
+    private val loadingProgressBarObserver = Observer<Boolean> {
+        if (it) {
+            binding.progress.show()
+        } else {
+            binding.progress.hide()
+        }
     }
 }

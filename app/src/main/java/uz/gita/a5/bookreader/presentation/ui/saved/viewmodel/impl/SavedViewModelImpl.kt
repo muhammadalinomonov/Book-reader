@@ -1,7 +1,6 @@
 package uz.gita.a5.bookreader.presentation.ui.saved.viewmodel.impl
 
 import android.content.Context
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -17,13 +16,18 @@ class SavedViewModelImpl : ViewModel(), SavedViewModel {
 
     override val errorLiveData = MutableLiveData<String>()
     override val booksLiveData = MutableLiveData<List<BookData>>()
+    override val loadingLiveData = MutableLiveData<Boolean>()
+
 
     override fun getAllSavedBook(context: Context) {
+        loadingLiveData.value = true
         repository.getSavedBooks(context).onEach {
             it.onSuccess {
+                loadingLiveData.value = false
                 booksLiveData.value = it
             }
             it.onFailure {
+                loadingLiveData.value = false
                 errorLiveData.value = it.message
             }
         }.launchIn(viewModelScope)

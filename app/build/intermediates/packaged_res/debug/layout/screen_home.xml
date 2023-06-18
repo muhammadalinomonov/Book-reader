@@ -69,7 +69,6 @@
                 android:text="The last book you are reading"
                 android:textColor="@color/white"
                 android:textSize="16sp"
-                android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -81,10 +80,10 @@
                 android:layout_marginTop="4dp"
                 android:text="Android Team"
                 android:textColor="#F6E4E4"
-
-                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txt" />
+                app:layout_constraintBottom_toTopOf="@id/progressBar3"/>
 
             <ProgressBar
                 android:progressBackgroundTint="#FFFFFF"
@@ -112,34 +111,40 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="16dp"
-        android:background="#F0F6FB"
+        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linear2">
+        app:layout_constraintTop_toBottomOf="@id/linear2"
+        app:layout_constraintVertical_bias="0.0">
 
-        <!--<TextView
-            android:layout_marginTop="16dp"
-            android:id="@+id/text_reccomendation"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:text="Our Recommendation"
-            android:textColor="#141C2E"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
--->
+
 
         <androidx.recyclerview.widget.RecyclerView
-            android:layout_marginTop="8dp"
             android:id="@+id/recycler"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:orientation="horizontal"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintTop_toTopOf="parent"
             tools:listitem="@layout/item_book" />
+
+        <androidx.core.widget.ContentLoadingProgressBar
+            android:background="@color/white"
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="match_parent"
+            android:padding="160dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

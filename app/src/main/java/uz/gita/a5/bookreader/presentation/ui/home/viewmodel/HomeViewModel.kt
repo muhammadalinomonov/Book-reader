@@ -6,6 +6,7 @@ import uz.gita.a5.bookreader.data.model.CategoryData
 interface HomeViewModel {
     val categoriesLiveData: LiveData<List<CategoryData>>
     val errorLiveData: LiveData<String>
+    val loadingLiveData:LiveData<Boolean>
 
     fun getBooksByCategoryData()
 }

@@ -9,6 +9,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.widget.ContentLoadingProgressBar;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -28,17 +29,21 @@ public final class ScreenSavedBinding implements ViewBinding {
   public final AppCompatImageView imgNoBooks;
 
   @NonNull
+  public final ContentLoadingProgressBar progress;
+
+  @NonNull
   public final RecyclerView recycler;
 
   @NonNull
   public final AppCompatTextView txtNoBookTitle;
 
   private ScreenSavedBinding(@NonNull ConstraintLayout rootView, @NonNull ConstraintLayout appBar,
-      @NonNull AppCompatImageView imgNoBooks, @NonNull RecyclerView recycler,
-      @NonNull AppCompatTextView txtNoBookTitle) {
+      @NonNull AppCompatImageView imgNoBooks, @NonNull ContentLoadingProgressBar progress,
+      @NonNull RecyclerView recycler, @NonNull AppCompatTextView txtNoBookTitle) {
     this.rootView = rootView;
     this.appBar = appBar;
     this.imgNoBooks = imgNoBooks;
+    this.progress = progress;
     this.recycler = recycler;
     this.txtNoBookTitle = txtNoBookTitle;
   }
@@ -82,6 +87,12 @@ public final class ScreenSavedBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.progress;
+      ContentLoadingProgressBar progress = ViewBindings.findChildViewById(rootView, id);
+      if (progress == null) {
+        break missingId;
+      }
+
       id = R.id.recycler;
       RecyclerView recycler = ViewBindings.findChildViewById(rootView, id);
       if (recycler == null) {
@@ -94,8 +105,8 @@ public final class ScreenSavedBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ScreenSavedBinding((ConstraintLayout) rootView, appBar, imgNoBooks, recycler,
-          txtNoBookTitle);
+      return new ScreenSavedBinding((ConstraintLayout) rootView, appBar, imgNoBooks, progress,
+          recycler, txtNoBookTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

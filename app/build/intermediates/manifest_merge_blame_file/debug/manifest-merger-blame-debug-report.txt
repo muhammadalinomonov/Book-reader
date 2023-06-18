@@ -63,8 +63,8 @@
 35        android:extractNativeLibs="false"
 36        android:fullBackupContent="@xml/backup_rules"
 36-->C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:17:9-54
-37        android:icon="@drawable/unnamed"
-37-->C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:18:9-41
+37        android:icon="@drawable/img_4"
+37-->C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:18:9-39
 38        android:label="@string/app_name"
 38-->C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:19:9-41
 39        android:roundIcon="@mipmap/ic_launcher_round"

@@ -5,11 +5,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.widget.ContentLoadingProgressBar;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -29,7 +29,7 @@ public final class ScreenExploreBinding implements ViewBinding {
   public final AppCompatImageView btnNotification;
 
   @NonNull
-  public final ProgressBar progressBar;
+  public final ContentLoadingProgressBar progress;
 
   @NonNull
   public final RecyclerView recycler;
@@ -38,12 +38,12 @@ public final class ScreenExploreBinding implements ViewBinding {
   public final EditText searchField;
 
   private ScreenExploreBinding(@NonNull ConstraintLayout rootView, @NonNull ConstraintLayout appBar,
-      @NonNull AppCompatImageView btnNotification, @NonNull ProgressBar progressBar,
+      @NonNull AppCompatImageView btnNotification, @NonNull ContentLoadingProgressBar progress,
       @NonNull RecyclerView recycler, @NonNull EditText searchField) {
     this.rootView = rootView;
     this.appBar = appBar;
     this.btnNotification = btnNotification;
-    this.progressBar = progressBar;
+    this.progress = progress;
     this.recycler = recycler;
     this.searchField = searchField;
   }
@@ -87,9 +87,9 @@ public final class ScreenExploreBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.progressBar;
-      ProgressBar progressBar = ViewBindings.findChildViewById(rootView, id);
-      if (progressBar == null) {
+      id = R.id.progress;
+      ContentLoadingProgressBar progress = ViewBindings.findChildViewById(rootView, id);
+      if (progress == null) {
         break missingId;
       }
 
@@ -106,7 +106,7 @@ public final class ScreenExploreBinding implements ViewBinding {
       }
 
       return new ScreenExploreBinding((ConstraintLayout) rootView, appBar, btnNotification,
-          progressBar, recycler, searchField);
+          progress, recycler, searchField);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

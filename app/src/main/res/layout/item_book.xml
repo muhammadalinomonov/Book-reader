@@ -3,12 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="220dp"
+    android:layout_marginEnd="4dp"
     android:background="#F0F6FB"
     app:cardCornerRadius="16dp"
     android:layout_height="340dp"
     android:layout_marginStart="4dp"
-    android:layout_marginBottom="2dp"
-    android:layout_margin="2dp">
+    android:layout_marginBottom="2dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:background="#80A5CFF3"

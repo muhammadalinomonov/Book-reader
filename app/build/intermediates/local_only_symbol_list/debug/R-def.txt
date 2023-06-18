@@ -10,6 +10,7 @@ color black
 color gray
 color kk
 color orange
+color progress
 color white
 drawable bell
 drawable bg_for_button
@@ -42,10 +43,9 @@ drawable ic_launcher_foreground
 drawable ic_person
 drawable ic_saved
 drawable ic_star
-drawable image_1
-drawable image_2
-drawable image_3
 drawable img
+drawable img_2
+drawable img_4
 drawable page_1
 drawable page_2
 drawable page_3
@@ -71,6 +71,7 @@ id action_splashScreen_to_viewPager
 id action_viewPager_to_mainScreen
 id activity_fragmentContainerView
 id appBar
+id appCompatImageView
 id app_navgh
 id author
 id book_img
@@ -106,7 +107,6 @@ id main_navigation.xml
 id pdfView
 id percentage
 id progress
-id progressBar
 id progressBar2
 id progressBar3
 id readBookScreen
