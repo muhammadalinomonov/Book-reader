@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20sp"
         android:layout_marginBottom="16dp"
-        app:dotsColor="#25B0C1"
+        app:dotsColor="@color/white"
         app:dotsElevation="4dp"
         app:dotsSize="10dp"
         app:layout_constraintBottom_toTopOf="@id/txtNext"
