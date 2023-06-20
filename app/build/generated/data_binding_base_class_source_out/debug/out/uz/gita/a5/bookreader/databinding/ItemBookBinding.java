@@ -10,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import java.lang.NullPointerException;
@@ -19,7 +20,7 @@ import uz.gita.a5.bookreader.R;
 
 public final class ItemBookBinding implements ViewBinding {
   @NonNull
-  private final CardView rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
   public final ImageView bookImg;
@@ -29,6 +30,9 @@ public final class ItemBookBinding implements ViewBinding {
 
   @NonNull
   public final TextView continueRead;
+
+  @NonNull
+  public final View first;
 
   @NonNull
   public final LinearLayout linear;
@@ -45,14 +49,15 @@ public final class ItemBookBinding implements ViewBinding {
   @NonNull
   public final TextView textBookName;
 
-  private ItemBookBinding(@NonNull CardView rootView, @NonNull ImageView bookImg,
-      @NonNull TextView btnDownload, @NonNull TextView continueRead, @NonNull LinearLayout linear,
-      @NonNull CardView linearStart, @NonNull TextView percentage, @NonNull TextView textAuthor,
-      @NonNull TextView textBookName) {
+  private ItemBookBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView bookImg,
+      @NonNull TextView btnDownload, @NonNull TextView continueRead, @NonNull View first,
+      @NonNull LinearLayout linear, @NonNull CardView linearStart, @NonNull TextView percentage,
+      @NonNull TextView textAuthor, @NonNull TextView textBookName) {
     this.rootView = rootView;
     this.bookImg = bookImg;
     this.btnDownload = btnDownload;
     this.continueRead = continueRead;
+    this.first = first;
     this.linear = linear;
     this.linearStart = linearStart;
     this.percentage = percentage;
@@ -62,7 +67,7 @@ public final class ItemBookBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public CardView getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -105,6 +110,12 @@ public final class ItemBookBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.first;
+      View first = ViewBindings.findChildViewById(rootView, id);
+      if (first == null) {
+        break missingId;
+      }
+
       id = R.id.linear;
       LinearLayout linear = ViewBindings.findChildViewById(rootView, id);
       if (linear == null) {
@@ -135,8 +146,8 @@ public final class ItemBookBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemBookBinding((CardView) rootView, bookImg, btnDownload, continueRead, linear,
-          linearStart, percentage, textAuthor, textBookName);
+      return new ItemBookBinding((ConstraintLayout) rootView, bookImg, btnDownload, continueRead,
+          first, linear, linearStart, percentage, textAuthor, textBookName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

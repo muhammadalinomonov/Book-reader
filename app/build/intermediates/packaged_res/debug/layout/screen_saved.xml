@@ -6,23 +6,26 @@
     xmlns:tools="http://schemas.android.com/tools">
 
 
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/appBar"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:background="@color/gray"
-        android:padding="16dp"
         app:layout_constraintBottom_toTopOf="@id/recycler"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:text="Saved books"
+            android:gravity="center"
             android:textColor="@color/white"
-            android:textSize="20sp"
+            android:textSize="26sp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -32,9 +35,10 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler"
+        android:background="@color/transparent"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginVertical="8dp"
+        android:paddingTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -66,7 +70,7 @@
         app:layout_constraintTop_toBottomOf="@id/imgNoBooks" />
 
     <androidx.core.widget.ContentLoadingProgressBar
-        android:background="@color/white"
+        android:background="@color/transparent"
         android:id="@+id/progress"
         style="?android:attr/progressBarStyleLarge"
         android:progressTint="#3555C6"
@@ -79,5 +83,5 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/appBar"
-        tools:visibility="visible" />
+        tools:visibility="gone" />
 </androidx.constraintlayout.widget.ConstraintLayout>

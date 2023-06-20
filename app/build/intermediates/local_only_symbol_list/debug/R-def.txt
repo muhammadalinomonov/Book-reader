@@ -11,6 +11,7 @@ color gray
 color kk
 color orange
 color progress
+color transparent
 color white
 drawable bell
 drawable bg_for_button
@@ -19,12 +20,15 @@ drawable bg_linear
 drawable book
 drawable book1984
 drawable bookmark
+drawable bookmark_1
 drawable bookmark_2
 drawable bookmark_selector
 drawable books
 drawable download
 drawable explore
 drawable explore2
+drawable explore_1
+drawable explore_2
 drawable explore_selector
 drawable home_1
 drawable home_2
@@ -44,6 +48,7 @@ drawable ic_person
 drawable ic_saved
 drawable ic_star
 drawable img
+drawable img_1
 drawable img_2
 drawable img_4
 drawable page_1
@@ -89,6 +94,7 @@ id dddd
 id dots
 id exploreFragment
 id favoriteFragment
+id first
 id genre
 id homeFragment
 id home_second_layout

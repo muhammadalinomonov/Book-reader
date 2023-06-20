@@ -21,8 +21,9 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         app:labelVisibilityMode="unlabeled"
         style="@style/Widget.Design.BottomNavigationView"
+        android:background="#085070"
         app:itemHorizontalTranslationEnabled="true"
-        app:itemIconTint="@color/gray"
+        app:itemIconTint="@color/white"
         android:id="@+id/bottom_navigation_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

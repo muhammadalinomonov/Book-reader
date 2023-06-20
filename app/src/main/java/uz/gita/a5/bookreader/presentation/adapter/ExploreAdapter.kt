@@ -62,7 +62,7 @@ class ExploreAdapter : ListAdapter<BookData, ExploreAdapter.ViewHolder>(diffdUti
                     percentage.text = "$foiz %"
                     btnDownload.visibility = View.GONE
                 }
-                linearStart.setOnClickListener {
+                binding.root.setOnClickListener {
                     clickBookListener.invoke(book)
                 }
             }

@@ -25,6 +25,7 @@
     <color name="kk">#050325</color>
     <color name="orange">#FF9800</color>
     <color name="progress">#2191F4</color>
+    <color name="transparent">#F0F6FB</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">E Book</string>
     <string name="default_web_client_id" translatable="false">574610653302-ru2nmvg5aat8hamntflif58qilmdphko.apps.googleusercontent.com</string>

@@ -25,7 +25,7 @@ public final class ScreenHomeBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final TextView dddd;
+  public final LinearLayout dddd;
 
   @NonNull
   public final ConstraintLayout homeSecondLayout;
@@ -51,7 +51,7 @@ public final class ScreenHomeBinding implements ViewBinding {
   @NonNull
   public final TextView txt;
 
-  private ScreenHomeBinding(@NonNull ConstraintLayout rootView, @NonNull TextView dddd,
+  private ScreenHomeBinding(@NonNull ConstraintLayout rootView, @NonNull LinearLayout dddd,
       @NonNull ConstraintLayout homeSecondLayout, @NonNull ImageView lastBookImage,
       @NonNull LinearLayout linear2, @NonNull ContentLoadingProgressBar progress,
       @NonNull ProgressBar progressBar3, @NonNull RecyclerView recycler,
@@ -96,7 +96,7 @@ public final class ScreenHomeBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.dddd;
-      TextView dddd = ViewBindings.findChildViewById(rootView, id);
+      LinearLayout dddd = ViewBindings.findChildViewById(rootView, id);
       if (dddd == null) {
         break missingId;
       }

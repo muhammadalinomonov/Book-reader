@@ -7,33 +7,32 @@
     android:background="@color/gray">
 
 
-    <TextView
-        android:textStyle="bold"
+    <LinearLayout
         android:id="@+id/dddd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:text="Joybook"
-        android:textColor="@color/white"
-        android:textSize="26sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-   <!-- <SearchView
-        android:id="@+id/search_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/search_bg"
-        android:iconifiedByDefault="false"
-        app:layout_constraintTop_toBottomOf="@id/dddd"
-        android:queryBackground="@android:color/transparent"
-        android:queryHint="search"
-        android:text="Search"
-         />-->
+        android:layout_height="56dp"
+        android:background="@color/gray"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="start|center"
+            android:layout_marginStart="16dp"
+            android:text="Jooybook"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+
 
     <LinearLayout
+        android:visibility="gone"
         android:background="@drawable/bg_linear"
         android:id="@+id/linear2"
         android:layout_width="match_parent"
@@ -41,6 +40,7 @@
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="16dp"
         android:orientation="horizontal"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/dddd">
@@ -110,8 +110,8 @@
         android:id="@+id/home_second_layout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="16dp"
-        android:background="@color/white"
+        android:paddingTop="16dp"
+        android:background="#F0F6FB"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -125,14 +125,14 @@
             android:id="@+id/recycler"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+
             android:orientation="horizontal"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintTop_toTopOf="parent"
             tools:listitem="@layout/item_book" />
 
         <androidx.core.widget.ContentLoadingProgressBar
-            android:background="@color/white"
+            android:background="#F0F6FB"
             android:id="@+id/progress"
             style="?android:attr/progressBarStyleLarge"
             android:layout_width="match_parent"

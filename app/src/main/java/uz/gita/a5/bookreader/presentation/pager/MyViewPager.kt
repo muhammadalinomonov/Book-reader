@@ -12,6 +12,8 @@ import by.kirich1409.viewbindingdelegate.viewBinding
 import com.tbuonomo.viewpagerdotsindicator.DotsIndicator
 import com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
 import uz.gita.a5.bookreader.R
+import uz.gita.a5.bookreader.data.source.local.MySharedPref
+import uz.gita.a5.bookreader.data.source.local.impl.MySharedPrefImpl
 import uz.gita.a5.bookreader.databinding.ItemPageBinding
 import uz.gita.a5.bookreader.databinding.ScreenPageBinding
 import uz.gita.a5.bookreader.presentation.adapter.ViewPagerAdapter
@@ -26,6 +28,7 @@ class MyViewPager : Fragment(R.layout.screen_page) {
     private val buttonNext by lazy { binding.txtNext }
     private val dots: DotsIndicator by lazy { binding.dots }
 
+    private val sharedPref:MySharedPref = MySharedPrefImpl.getInstance()
     init {
 
     }
@@ -37,6 +40,7 @@ class MyViewPager : Fragment(R.layout.screen_page) {
                 vp.currentItem = vp.currentItem + 1
             else {
                 Log.d("TTT", "start")
+                sharedPref.isFirst = false
                 findNavController().navigate(R.id.action_viewPager_to_mainScreen)
             }
         }
