@@ -56,17 +56,9 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-    <!--<View
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:background="@color/gray"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/appBar" />-->
 
     <androidx.core.widget.NestedScrollView
         app:layout_constraintBottom_toTopOf="@id/btnRead"
-        android:layout_marginBottom="10dp"
         android:id="@+id/total"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -113,6 +105,7 @@
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_marginStart="16dp"
+                android:layout_marginHorizontal="16dp"
                 android:id="@+id/author"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -129,13 +122,12 @@
                 android:id="@+id/txtAuthor"
                 android:layout_width="wrap_content"
                 android:textColor="@color/black"
-                android:fontFamily="@font/athiti_medium"
+
                 android:layout_height="wrap_content"
                 android:text="Hbjhbhj jhghgb"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="@+id/author"
-                app:layout_constraintStart_toEndOf="@id/author"
-                app:layout_constraintTop_toTopOf="@+id/author" />
+                app:layout_constraintStart_toEndOf="@id/author" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/genre"
@@ -157,11 +149,10 @@
                 android:text="ssfsdfsdf"
                 android:gravity="bottom"
                 android:textColor="@color/black"
-                android:fontFamily="@font/athiti_medium"
+
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="@+id/genre"
-                app:layout_constraintStart_toEndOf="@id/genre"
-                app:layout_constraintTop_toTopOf="@+id/genre" />
+                app:layout_constraintStart_toEndOf="@id/genre" />
 
             <TextView
 
@@ -182,7 +173,7 @@
                 android:id="@+id/txtDescription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginVertical="8dp"
+                android:layout_marginTop="8dp"
                 android:fontFamily="@font/athiti_medium"
                 android:text="Star: vjvjj vjvjdnv jdnbvhdbvhb dhbdhv bdhgcvgh vgd vgsdvcgdvcg dvcgv gdvgdv hvzchvbcghvbzdhgc vxcvsgc xgc xgcvxgvcgxdchxdvchxdvchgxdvchsvhdcvj"
                 android:textColor="@color/black"
@@ -197,6 +188,7 @@
     </androidx.core.widget.NestedScrollView>
 
     <androidx.cardview.widget.CardView
+        android:visibility="gone"
         android:id="@+id/btnRead"
 
         android:layout_width="match_parent"

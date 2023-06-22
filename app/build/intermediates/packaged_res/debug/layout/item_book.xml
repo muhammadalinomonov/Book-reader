@@ -23,26 +23,21 @@
             app:layout_constraintTop_toTopOf="parent"/>
 
 
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-
-            app:layout_constraintTop_toBottomOf="@id/first"
-            android:layout_width="match_parent"
-            android:layout_height="260dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:background="#FFFFFF">
-
-            <androidx.cardview.widget.CardView
-                android:elevation="8dp"
-                app:cardCornerRadius="0dp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
-        </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.cardview.widget.CardView
+        app:layout_constraintTop_toBottomOf="@id/first"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="4dp"
+        android:paddingBottom="0.5dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/transparent" />
 
 
 
 
         <ImageView
+            android:elevation="8dp"
             android:paddingVertical="4dp"
             android:id="@+id/book_img"
             android:layout_marginHorizontal="10dp"
@@ -57,6 +52,7 @@
             tools:src="@drawable/book" />
 
         <TextView
+            android:elevation="2dp"
             android:textStyle="bold"
             android:textSize="16sp"
             android:paddingHorizontal="4dp"
@@ -124,6 +120,7 @@
 
 
         <LinearLayout
+            android:elevation="3dp"
             android:id="@+id/linear"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -132,6 +129,7 @@
             app:layout_constraintBottom_toTopOf="@id/linearStart">
 
             <TextView
+
                 android:id="@+id/text_author"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

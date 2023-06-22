@@ -62,7 +62,10 @@ class HorizontalExploreAdapter : Adapter<HorizontalExploreAdapter.ItemViewHolder
                     clickListener?.invoke(book)
                 }
 
-                Glide.with(binding.root.context).load(book.imageUrl)
+                Glide.with(binding.root.context)
+
+                    .load(book.imageUrl)
+                    .placeholder(R.drawable.book)
                     .into(bookImg)
             }
             binding.root.setOnClickListener {

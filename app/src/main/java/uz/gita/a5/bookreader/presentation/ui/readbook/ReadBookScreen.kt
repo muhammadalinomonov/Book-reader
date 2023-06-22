@@ -103,6 +103,7 @@ class ReadBookScreen : Fragment(R.layout.screen_read_book),
         binding.progressBar2.max = pageCount
         pageNumber = page
         sharedPref.totalPage = pageCount
+        sharedPref.savedPage = page + 1
         binding.txtPages.text = String.format("%s / %s", page + 1, pageCount)
         sharedPref.savedPageByBookName(bookName, page + 1)
         binding.progressBar2.progress = page
@@ -126,7 +127,8 @@ class ReadBookScreen : Fragment(R.layout.screen_read_book),
         super.onPause()
         if (pageNumber != 0) {
             sharedPref.bookName = bookName
-            sharedPref.savedPage = pageNumber
+            Log.d("@@@", sharedPref.savedPage.toString())
+//            sharedPref.savedPage = pageNumber
 //            sharedPref.totalPage = totalPage
             sharedPref.bookUrl = imageUrl
             sharedPref.savedPageByBookName(bookName, pageNumber + 1)

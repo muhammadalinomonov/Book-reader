@@ -39,6 +39,7 @@ class ExploreScreen : Fragment(R.layout.screen_explore) {
         viewModel.booksLiveData.observe(viewLifecycleOwner, booksObserver)
         viewModel.errorLiveData.observe(viewLifecycleOwner, errorData)
         viewModel.loadingLiveData.observe(viewLifecycleOwner, loadingProgressBarObserver)
+        viewModel.placeHolderLiveData.observe(viewLifecycleOwner, placeHolderObserver)
 
         binding.apply {
             recycler.layoutManager = GridLayoutManager(requireContext(), 2)
@@ -72,4 +73,16 @@ class ExploreScreen : Fragment(R.layout.screen_explore) {
             binding.progress.hide()
         }
     }
+    private val placeHolderObserver = Observer<Boolean> {
+        if (it) {
+            binding.placeholder.visibility = View.VISIBLE
+            binding.txtPlaceholder.visibility = View.VISIBLE
+
+        } else {
+            binding.placeholder.visibility = View.GONE
+            binding.txtPlaceholder.visibility = View.GONE
+
+        }
+    }
+
 }

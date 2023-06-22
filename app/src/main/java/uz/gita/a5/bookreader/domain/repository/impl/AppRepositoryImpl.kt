@@ -133,7 +133,7 @@ class AppRepositoryImpl private constructor() : AppRepository {
                         it.get("description") as String
                     )
 
-                    if (bookData.bookName.startsWith(name) || bookData.author.startsWith(name))
+                    if (bookData.bookName.startsWith(name, ignoreCase = true) || bookData.author.startsWith(name, ignoreCase = true))
                         dataList.add(bookData)
                 }
                 trySend(Result.success(dataList))

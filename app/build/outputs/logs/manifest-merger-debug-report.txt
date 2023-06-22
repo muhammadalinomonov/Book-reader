@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:1-39:12
+ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:1-40:12
 MERGED from [androidx.databinding:viewbinding:8.0.0] C:\Users\TUF\.gradle\caches\transforms-3\c42e5c4428cfca8551c279283df05af3\transformed\jetified-viewbinding-8.0.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.karumi:dexter:6.2.3] C:\Users\TUF\.gradle\caches\transforms-3\df54a5659fd642d5148f9b8cb8d9f4b4\transformed\jetified-dexter-6.2.3\AndroidManifest.xml:17:1-32:12
 MERGED from [androidx.navigation:navigation-ui-ktx:2.5.3] C:\Users\TUF\.gradle\caches\transforms-3\af5066c2fdc326e6529b906389194d66\transformed\navigation-ui-ktx-2.5.3\AndroidManifest.xml:17:1-24:12
@@ -111,22 +111,22 @@ MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\TUF\.gr
 MERGED from [io.grpc:grpc-android:1.52.1] C:\Users\TUF\.gradle\caches\transforms-3\ce61bbcde87f6882742efd94433618c5\transformed\jetified-grpc-android-1.52.1\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.dagger:dagger-lint-aar:2.44.2] C:\Users\TUF\.gradle\caches\transforms-3\ce0772ee590c2e7eed6cf1f81969055f\transformed\jetified-dagger-lint-aar-2.44.2\AndroidManifest.xml:16:1-19:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\TUF\.gradle\caches\transforms-3\28209edc5d6d347ecc11a32cd1f1d21a\transformed\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
-INJECTED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:1-40:12
 	package
 		INJECTED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:1-39:12
+		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:1-40:12
 		INJECTED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:1-39:12
+		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:1-40:12
 		INJECTED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:1-39:12
+		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:1-40:12
 		INJECTED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:11-69
@@ -191,7 +191,7 @@ ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidMan
 	android:name
 		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:9:22-78
 application
-ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:13:5-37:19
+ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:13:5-38:19
 MERGED from [com.karumi:dexter:6.2.3] C:\Users\TUF\.gradle\caches\transforms-3\df54a5659fd642d5148f9b8cb8d9f4b4\transformed\jetified-dexter-6.2.3\AndroidManifest.xml:26:5-30:19
 MERGED from [com.karumi:dexter:6.2.3] C:\Users\TUF\.gradle\caches\transforms-3\df54a5659fd642d5148f9b8cb8d9f4b4\transformed\jetified-dexter-6.2.3\AndroidManifest.xml:26:5-30:19
 MERGED from [com.google.android.material:material:1.9.0] C:\Users\TUF\.gradle\caches\transforms-3\f3bd80767c186b9209f4fccdcf45b8d6\transformed\material-1.9.0\AndroidManifest.xml:24:5-20
@@ -291,27 +291,29 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\TU
 	android:name
 		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:14:9-28
 activity#uz.gita.a5.bookreader.MainActivity
-ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:24:9-32:20
+ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:24:9-33:20
+	android:screenOrientation
+		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:25:13-49
 	android:exported
-		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:26:13-36
+		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:27:13-36
 	android:name
-		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:25:13-41
+		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:26:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:27:13-31:29
+ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:28:13-32:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:28:17-69
+ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:29:17-69
 	android:name
-		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:28:25-66
+		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:29:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:30:17-77
+ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:31:17-77
 	android:name
-		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:30:27-74
+		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:31:27-74
 meta-data#preloaded_fonts
-ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:33:9-35:57
+ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:34:9-36:57
 	android:resource
-		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:35:13-54
+		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:36:13-54
 	android:name
-		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:34:13-43
+		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:35:13-43
 uses-sdk
 INJECTED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml

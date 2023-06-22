@@ -43,7 +43,10 @@ class SavedBooksAdapter : ListAdapter<BookData, SavedBooksAdapter.SavedViewHolde
         fun bind(bookData: BookData) {
             binding.apply {
                 txtTitle.text = bookData.bookName
-                Glide.with(itemView.context).load(bookData.imageUrl).into(imgIcon)
+                Glide.with(itemView.context)
+                    .load(bookData.imageUrl)
+                    .placeholder(R.drawable.book)
+                    .into(imgIcon)
 
                 progress.max = bookData.page.toInt()
                 progress.progress = sharedPref.getSavedPageByBookName(bookData.bookName)

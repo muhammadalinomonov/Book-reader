@@ -5,6 +5,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatImageView;
@@ -29,6 +31,9 @@ public final class ScreenExploreBinding implements ViewBinding {
   public final AppCompatImageView btnNotification;
 
   @NonNull
+  public final ImageView placeholder;
+
+  @NonNull
   public final ContentLoadingProgressBar progress;
 
   @NonNull
@@ -37,15 +42,21 @@ public final class ScreenExploreBinding implements ViewBinding {
   @NonNull
   public final EditText searchField;
 
+  @NonNull
+  public final TextView txtPlaceholder;
+
   private ScreenExploreBinding(@NonNull ConstraintLayout rootView, @NonNull ConstraintLayout appBar,
-      @NonNull AppCompatImageView btnNotification, @NonNull ContentLoadingProgressBar progress,
-      @NonNull RecyclerView recycler, @NonNull EditText searchField) {
+      @NonNull AppCompatImageView btnNotification, @NonNull ImageView placeholder,
+      @NonNull ContentLoadingProgressBar progress, @NonNull RecyclerView recycler,
+      @NonNull EditText searchField, @NonNull TextView txtPlaceholder) {
     this.rootView = rootView;
     this.appBar = appBar;
     this.btnNotification = btnNotification;
+    this.placeholder = placeholder;
     this.progress = progress;
     this.recycler = recycler;
     this.searchField = searchField;
+    this.txtPlaceholder = txtPlaceholder;
   }
 
   @Override
@@ -87,6 +98,12 @@ public final class ScreenExploreBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.placeholder;
+      ImageView placeholder = ViewBindings.findChildViewById(rootView, id);
+      if (placeholder == null) {
+        break missingId;
+      }
+
       id = R.id.progress;
       ContentLoadingProgressBar progress = ViewBindings.findChildViewById(rootView, id);
       if (progress == null) {
@@ -105,8 +122,14 @@ public final class ScreenExploreBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.txt_placeholder;
+      TextView txtPlaceholder = ViewBindings.findChildViewById(rootView, id);
+      if (txtPlaceholder == null) {
+        break missingId;
+      }
+
       return new ScreenExploreBinding((ConstraintLayout) rootView, appBar, btnNotification,
-          progress, recycler, searchField);
+          placeholder, progress, recycler, searchField, txtPlaceholder);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

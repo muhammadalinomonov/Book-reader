@@ -20,6 +20,7 @@ class ExploreViewModelImpl : ViewModel(), ExploreViewModel {
     override val errorLiveData = MutableLiveData<String>()
     override val booksLiveData = MutableLiveData<List<BookData>>()
     override val loadingLiveData = MutableLiveData<Boolean>()
+    override val placeHolderLiveData = MutableLiveData<Boolean>()
     override fun getAll() {
         repository.getAllBook().onEach {
             loadingLiveData.value = true
@@ -39,6 +40,7 @@ class ExploreViewModelImpl : ViewModel(), ExploreViewModel {
         repository.getSearchBook(name).onEach {
             it.onSuccess {
                 loadingLiveData.value = false
+                placeHolderLiveData.value = it.isEmpty()
                 booksLiveData.value = it
             }
             it.onFailure {

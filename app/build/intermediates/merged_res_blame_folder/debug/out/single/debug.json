@@ -204,16 +204,16 @@
         "source": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-main-60:\\drawable\\img_4.png"
     },
     {
+        "merged": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-merged_res-58:\\drawable_ic_navigate_next.xml.flat",
+        "source": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-main-60:\\drawable\\ic_navigate_next.xml"
+    },
+    {
         "merged": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-merged_res-58:\\drawable_page_1.png.flat",
         "source": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-main-60:\\drawable\\page_1.png"
     },
     {
         "merged": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-merged_res-58:\\drawable_ic_saved.png.flat",
         "source": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-main-60:\\drawable\\ic_saved.png"
-    },
-    {
-        "merged": "uz.gita.a5.bookreader.app-merged_res-58:/layout_delete_dialog.xml.flat",
-        "source": "uz.gita.a5.bookreader.app-main-60:/layout/delete_dialog.xml"
     },
     {
         "merged": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-merged_res-58:\\xml_backup_rules.xml.flat",
@@ -246,6 +246,10 @@
     {
         "merged": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-merged_res-58:\\drawable_search_bg.xml.flat",
         "source": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-main-60:\\drawable\\search_bg.xml"
+    },
+    {
+        "merged": "uz.gita.a5.bookreader.app-merged_res-58:/layout_item_book.xml.flat",
+        "source": "uz.gita.a5.bookreader.app-main-60:/layout/item_book.xml"
     },
     {
         "merged": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-merged_res-58:\\layout_item_book.xml.flat",
@@ -326,10 +330,6 @@
     {
         "merged": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-merged_res-58:\\layout_screen_main.xml.flat",
         "source": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-main-60:\\layout\\screen_main.xml"
-    },
-    {
-        "merged": "uz.gita.a5.bookreader.app-merged_res-58:/drawable_bg_for_button.xml.flat",
-        "source": "uz.gita.a5.bookreader.app-main-60:/drawable/bg_for_button.xml"
     },
     {
         "merged": "C:\\Users\\TUF\\.gradle\\daemon\\8.0\\uz.gita.a5.bookreader.app-merged_res-58:\\mipmap-hdpi_ic_launcher.webp.flat",

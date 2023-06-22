@@ -3092,6 +3092,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_navigate_next
 drawable ic_person
 drawable ic_saved
 drawable ic_search_black_24
@@ -3592,6 +3593,7 @@ id peekHeight
 id percent
 id percentage
 id pin
+id placeholder
 id position
 id postLayout
 id pressed
@@ -3756,6 +3758,7 @@ id txtNext
 id txtNoBookTitle
 id txtPages
 id txtTitle
+id txt_placeholder
 id unchecked
 id uniform
 id unlabeled

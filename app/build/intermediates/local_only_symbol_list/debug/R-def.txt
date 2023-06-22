@@ -44,6 +44,7 @@ drawable ic_explore
 drawable ic_home
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_navigate_next
 drawable ic_person
 drawable ic_saved
 drawable ic_star
@@ -112,6 +113,7 @@ id main_fragmentContainerView
 id main_navigation.xml
 id pdfView
 id percentage
+id placeholder
 id progress
 id progressBar2
 id progressBar3
@@ -136,6 +138,7 @@ id txtNext
 id txtNoBookTitle
 id txtPages
 id txtTitle
+id txt_placeholder
 id viewPager
 id view_pager
 layout activity_main

@@ -43,6 +43,7 @@ class ExploreAdapter : ListAdapter<BookData, ExploreAdapter.ViewHolder>(diffdUti
 
                 Glide.with(itemView.context)
                     .load(book.imageUrl)
+                    .placeholder(R.drawable.book)
                     .centerCrop()
                     .into(bookImg)
                 val defaultPage = sharedPref.getSavedPageByBookName(book.bookName)

@@ -1,6 +1,7 @@
 package uz.gita.a5.bookreader.presentation.ui.home.viewmodel.impl
 
 import android.util.Log
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
@@ -8,15 +9,22 @@ import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import uz.gita.a5.bookreader.data.model.CategoryData
+import uz.gita.a5.bookreader.data.source.local.MySharedPref
+import uz.gita.a5.bookreader.data.source.local.impl.MySharedPrefImpl
 import uz.gita.a5.bookreader.domain.usecase.explore.HomeUseCase
 import uz.gita.a5.bookreader.presentation.ui.home.viewmodel.HomeViewModel
 
 class HomeViewModelImpl(private val useCase: HomeUseCase) : ViewModel(), HomeViewModel {
 
     //    private val repository: AppRepository = AppRepositoryImpl.getInstance()
+
+
+    private val sharedPref:MySharedPref = MySharedPrefImpl.getInstance()
     override val categoriesLiveData = MutableLiveData<List<CategoryData>>()
     override val errorLiveData = MutableLiveData<String>()
     override val loadingLiveData = MutableLiveData<Boolean>()
+    override val maxProgressLiveData = MutableLiveData(sharedPref.totalPage)
+    override val progressLiveData = MutableLiveData(sharedPref.savedPage)
 
 
     init {
@@ -24,6 +32,8 @@ class HomeViewModelImpl(private val useCase: HomeUseCase) : ViewModel(), HomeVie
     }
 
     override fun getBooksByCategoryData() {
+
+        progressLiveData.value = sharedPref.savedPage
         loadingLiveData.value = true
         useCase.getBooksByCategoryData().onEach {
 

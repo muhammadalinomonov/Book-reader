@@ -37,9 +37,13 @@ class HomeScreen : Fragment(R.layout.screen_home) {
     private val adapter by lazy { HomeAdapter() }
 
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+    }
     private val sharedPref: MySharedPref = MySharedPrefImpl.getInstance()
 
-    @SuppressLint("SetTextI18n")
+    @SuppressLint("SetTextI18n", "FragmentLiveDataObserve")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
         val progressBar: ContentLoadingProgressBar = binding.progress
@@ -48,6 +52,17 @@ class HomeScreen : Fragment(R.layout.screen_home) {
             ContextCompat.getColor(requireContext(), R.color.progress),
             PorterDuff.Mode.SRC_IN
         )
+
+        viewModel.maxProgressLiveData.observe(viewLifecycleOwner){
+            Log.d("@@@", "max$it")
+            binding.progressBar3.max = it
+        }
+        viewModel.progressLiveData.observe(viewLifecycleOwner){
+            Log.d("@@@", "progress$it")
+            Log.d("@@@", "progress${sharedPref.savedPage}")
+
+            binding.progressBar3.progress = it
+        }
         progressBar.indeterminateDrawable = progressDrawable
 
         viewModel.loadingLiveData.observe(viewLifecycleOwner, loadingProgressBarObserver)
@@ -64,15 +79,16 @@ class HomeScreen : Fragment(R.layout.screen_home) {
             binding.apply {
                 linear2.visibility = View.VISIBLE
 
-                Glide.with(requireContext()).load(sharedPref.bookUrl)
+                Glide.with(requireContext())
+                    .load(sharedPref.bookUrl)
                     .placeholder(R.drawable.ribbon)
                     .into(lastBookImage)
 
-                progressBar3.max = sharedPref.totalPage
-                progressBar3.progress = sharedPref.getSavedPageByBookName(sharedPref.bookName!!)
+                /*progressBar3.progress = sharedPref.getSavedPageByBookName(sharedPref.bookName!!)
+                progressBar3.max = sharedPref.totalPage*/
 
-                Log.d("PPP", "${sharedPref.savedPage}/${sharedPref.totalPage}")
-                Log.d("PPP", "${progressBar3.progress}/${progressBar3.max}")
+                /*Log.d("@@@", "${sharedPref.getSavedPageByBookName(sharedPref.bookName!!)} /${sharedPref.totalPage}")
+                Log.d("@@@", "${progressBar3.progress}  /${progressBar3.max}")*/
 
                 textBookName.text = sharedPref.bookName
             }
