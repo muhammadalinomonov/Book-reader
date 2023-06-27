@@ -1,5 +1,6 @@
 package uz.gita.a5.bookreader.presentation.adapter
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -36,6 +37,7 @@ class ExploreAdapter : ListAdapter<BookData, ExploreAdapter.ViewHolder>(diffdUti
 
     inner class ViewHolder(private val binding: ItemBookForExploreBinding) :
         RecyclerView.ViewHolder(binding.root) {
+        @SuppressLint("SetTextI18n")
         fun bind(book: BookData) {
             binding.apply {
                 textBookName.text = book.bookName
@@ -48,20 +50,22 @@ class ExploreAdapter : ListAdapter<BookData, ExploreAdapter.ViewHolder>(diffdUti
                     .into(bookImg)
                 val defaultPage = sharedPref.getSavedPageByBookName(book.bookName)
                 if (defaultPage == 0) {
-                    percentage.visibility = View.GONE
-                    continueRead.visibility = View.GONE
-                    btnDownload.visibility = View.VISIBLE
-                } else {
-                    percentage.visibility = View.VISIBLE
-                    continueRead.visibility = View.VISIBLE
+                    txtOfProgress.visibility = View.GONE
+                    progressBar.visibility = View.GONE
+                    txtStarted.visibility = View.VISIBLE
+                }
+                else {
+                    txtOfProgress.visibility = View.VISIBLE
+                    progressBar.visibility = View.VISIBLE
 
                     var foiz = defaultPage.toFloat() / book.page.toInt() * 100
                     foiz -= (foiz % 0.1).toFloat()
                     if (foiz > 99){
                         foiz = 100f
                     }
-                    percentage.text = "$foiz %"
-                    btnDownload.visibility = View.GONE
+                    progressBar.progress = foiz.toInt()
+                    txtOfProgress.text = "$defaultPage of ${book.page.toInt()}"
+                    txtStarted.visibility = View.GONE
                 }
                 binding.root.setOnClickListener {
                     clickBookListener.invoke(book)

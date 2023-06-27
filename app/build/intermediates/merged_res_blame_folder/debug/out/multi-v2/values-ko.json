@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "uz.gita.a5.bookreader.app-mergeDebugResources-56:/values-ko/values-ko.xml",
+            "outputFile": "uz.gita.a5.bookreader.app-mergeDebugResources-58:/values-ko/values-ko.xml",
             "map": [
                 {
                     "source": "C:\\Users\\TUF\\.gradle\\caches\\transforms-3\\829b7e670d6001afc5f33981d6a0f539\\transformed\\browser-1.4.0\\res\\values-ko\\values-ko.xml",
@@ -69,6 +69,23 @@
                         "startOffsets": "5066",
                         "endColumns": "120",
                         "endOffsets": "5182"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\TUF\\.gradle\\caches\\transforms-3\\75bee810252347cd89176678e7bca7b3\\transformed\\jetified-ucrop-2.2.7\\res\\values-ko\\values-ko.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,112,164",
+                        "endColumns": "56,51,46",
+                        "endOffsets": "107,159,206"
+                    },
+                    "to": {
+                        "startLines": "128,129,130",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "10624,10681,10733",
+                        "endColumns": "56,51,46",
+                        "endOffsets": "10676,10728,10775"
                     }
                 },
                 {

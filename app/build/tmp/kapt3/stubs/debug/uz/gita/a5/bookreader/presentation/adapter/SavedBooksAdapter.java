@@ -56,7 +56,7 @@ public final class SavedBooksAdapter extends androidx.recyclerview.widget.ListAd
         }
     }
     
-    @kotlin.Metadata(mv = {1, 8, 0}, k = 1, d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0086\u0004\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J\u000e\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\bR\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\t"}, d2 = {"Luz/gita/a5/bookreader/presentation/adapter/SavedBooksAdapter$SavedViewHolder;", "Landroidx/recyclerview/widget/RecyclerView$ViewHolder;", "binding", "Luz/gita/a5/bookreader/databinding/ItemSavedBookBinding;", "(Luz/gita/a5/bookreader/presentation/adapter/SavedBooksAdapter;Luz/gita/a5/bookreader/databinding/ItemSavedBookBinding;)V", "bind", "", "bookData", "Luz/gita/a5/bookreader/data/model/BookData;", "app_debug"})
+    @kotlin.Metadata(mv = {1, 8, 0}, k = 1, d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0086\u0004\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J\u0010\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\bH\u0007R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\t"}, d2 = {"Luz/gita/a5/bookreader/presentation/adapter/SavedBooksAdapter$SavedViewHolder;", "Landroidx/recyclerview/widget/RecyclerView$ViewHolder;", "binding", "Luz/gita/a5/bookreader/databinding/ItemSavedBookBinding;", "(Luz/gita/a5/bookreader/presentation/adapter/SavedBooksAdapter;Luz/gita/a5/bookreader/databinding/ItemSavedBookBinding;)V", "bind", "", "bookData", "Luz/gita/a5/bookreader/data/model/BookData;", "app_debug"})
     public final class SavedViewHolder extends androidx.recyclerview.widget.RecyclerView.ViewHolder {
         private final uz.gita.a5.bookreader.databinding.ItemSavedBookBinding binding = null;
         
@@ -65,6 +65,7 @@ public final class SavedBooksAdapter extends androidx.recyclerview.widget.ListAd
             super(null);
         }
         
+        @android.annotation.SuppressLint(value = {"SetTextI18n"})
         public final void bind(@org.jetbrains.annotations.NotNull
         uz.gita.a5.bookreader.data.model.BookData bookData) {
         }

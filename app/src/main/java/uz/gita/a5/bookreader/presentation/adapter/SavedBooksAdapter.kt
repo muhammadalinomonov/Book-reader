@@ -1,5 +1,6 @@
 package uz.gita.a5.bookreader.presentation.adapter
 
+import android.annotation.SuppressLint
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -31,32 +32,44 @@ class SavedBooksAdapter : ListAdapter<BookData, SavedBooksAdapter.SavedViewHolde
         override fun areItemsTheSame(oldItem: BookData, newItem: BookData): Boolean {
             return oldItem.bookName == newItem.bookName
         }
-
         override fun areContentsTheSame(oldItem: BookData, newItem: BookData): Boolean {
             return oldItem == newItem
         }
-
     }
 
     inner class SavedViewHolder(private val binding: ItemSavedBookBinding) :
         ViewHolder(binding.root) {
+        @SuppressLint("SetTextI18n")
         fun bind(bookData: BookData) {
             binding.apply {
                 txtTitle.text = bookData.bookName
+                textAuthor.text = bookData.author
                 Glide.with(itemView.context)
                     .load(bookData.imageUrl)
                     .placeholder(R.drawable.book)
                     .into(imgIcon)
 
-                progress.max = bookData.page.toInt()
-                progress.progress = sharedPref.getSavedPageByBookName(bookData.bookName)
 
+                Log.d(
+                    "AAA",
+                    "progress1 -> ${sharedPref.getSavedPageByBookName(bookData.bookName) * 100} / ${bookData.page}"
+                )
+                Log.d(
+                    "AAA",
+                    "progress1 -> ${sharedPref.getSavedPageByBookName(bookData.bookName) * 100 / bookData.page}"
+                )
+                progress.progress =
+                    sharedPref.getSavedPageByBookName(bookData.bookName) * 100 / bookData.page.toInt()
+
+
+                txtOfProgress.text =
+                    "${sharedPref.getSavedPageByBookName(bookData.bookName)} of ${bookData.page.toInt()}"
                 Log.d("AAA", "progress -> ${progress.progress} / ${progress.max}")
                 root.setOnClickListener {
                     clickListener.invoke(bookData)
                 }
 
-                btnDelete.setOnClickListener {
+                binding.btnDelete.setOnClickListener {
                     deleteClickListener.invoke(bookData)
                 }
             }
@@ -74,7 +87,8 @@ class SavedBooksAdapter : ListAdapter<BookData, SavedBooksAdapter.SavedViewHolde
         )
 
     override fun onBindViewHolder(holder: SavedViewHolder, position: Int) {
-        holder.itemView.animation = AnimationUtils.loadAnimation(holder.itemView.context, R.anim.animatsiya)
+        holder.itemView.animation =
+            AnimationUtils.loadAnimation(holder.itemView.context, R.anim.animatsiya)
         holder.bind(getItem(position))
     }
 }

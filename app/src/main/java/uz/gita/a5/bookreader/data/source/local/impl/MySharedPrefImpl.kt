@@ -38,6 +38,12 @@ class MySharedPrefImpl : MySharedPref {
         set(value) {
             pref.edit().putString("BOOK_URL", value).apply()
         }
+    override var name: String
+        get() = pref.getString("NAME", "")!!
+        set(value) = pref.edit().putString("NAME", value).apply()
+    override var imageUri: String
+        get() = pref.getString("IMG_URI", "")!!
+        set(value) = pref.edit().putString("IMG_URI", value).apply()
 
 
     override fun savedPageByBookName(bookName: String, page: Int) {

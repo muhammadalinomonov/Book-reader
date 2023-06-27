@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:1-40:12
+ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:1-41:12
 MERGED from [androidx.databinding:viewbinding:8.0.0] C:\Users\TUF\.gradle\caches\transforms-3\c42e5c4428cfca8551c279283df05af3\transformed\jetified-viewbinding-8.0.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.karumi:dexter:6.2.3] C:\Users\TUF\.gradle\caches\transforms-3\df54a5659fd642d5148f9b8cb8d9f4b4\transformed\jetified-dexter-6.2.3\AndroidManifest.xml:17:1-32:12
 MERGED from [androidx.navigation:navigation-ui-ktx:2.5.3] C:\Users\TUF\.gradle\caches\transforms-3\af5066c2fdc326e6529b906389194d66\transformed\navigation-ui-ktx-2.5.3\AndroidManifest.xml:17:1-24:12
@@ -11,7 +11,9 @@ MERGED from [androidx.navigation:navigation-ui:2.5.3] C:\Users\TUF\.gradle\cache
 MERGED from [com.google.android.material:material:1.9.0] C:\Users\TUF\.gradle\caches\transforms-3\f3bd80767c186b9209f4fccdcf45b8d6\transformed\material-1.9.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\TUF\.gradle\caches\transforms-3\93f91bd369031e1a837ecbd46360d16b\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [com.tbuonomo:dotsindicator:4.3] C:\Users\TUF\.gradle\caches\transforms-3\3e3a57bca7c388b84bb0e4a88d11474d\transformed\jetified-dotsindicator-4.3-debug\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:2:1-59:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\TUF\.gradle\caches\transforms-3\42fadd24c51549ea26b265b7c4a6b5e8\transformed\jetified-appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.yalantis:ucrop:2.2.7] C:\Users\TUF\.gradle\caches\transforms-3\75bee810252347cd89176678e7bca7b3\transformed\jetified-ucrop-2.2.7\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\TUF\.gradle\caches\transforms-3\592e692fe7960d60c3ed72fa29225bb7\transformed\appcompat-1.6.1\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.dagger:hilt-android:2.44.2] C:\Users\TUF\.gradle\caches\transforms-3\d00853cef6977c1fa6654433cf4e70e5\transformed\jetified-hilt-android-2.44.2\AndroidManifest.xml:16:1-19:12
 MERGED from [com.github.bumptech.glide:glide:4.15.1] C:\Users\TUF\.gradle\caches\transforms-3\f24edec137c6f698cb1e9a41421180ee\transformed\jetified-glide-4.15.1\AndroidManifest.xml:2:1-11:12
@@ -59,11 +61,11 @@ MERGED from [androidx.activity:activity-ktx:1.6.0] C:\Users\TUF\.gradle\caches\t
 MERGED from [androidx.activity:activity:1.6.0] C:\Users\TUF\.gradle\caches\transforms-3\52ad6eb2431f1ee70442a312b7f02366\transformed\jetified-activity-1.6.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\TUF\.gradle\caches\transforms-3\b551881a72c97e8cdece72967df00e24\transformed\jetified-emoji2-views-helper-1.2.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\TUF\.gradle\caches\transforms-3\cae849a9f511dbd31cc776fedfdc0036\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.1] C:\Users\TUF\.gradle\caches\transforms-3\97bab723274e150f5baa87842050422b\transformed\lifecycle-livedata-core-2.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\TUF\.gradle\caches\transforms-3\d5c08ed2bfd74a9d9b7c1a61b0e8ce51\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:17:1-35:12
 MERGED from [androidx.navigation:navigation-common-ktx:2.5.3] C:\Users\TUF\.gradle\caches\transforms-3\55e0023091d8fe51f549e9182fc380be\transformed\navigation-common-ktx-2.5.3\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-common:2.5.3] C:\Users\TUF\.gradle\caches\transforms-3\a393550d4e4126292ac327a9e5651b2b\transformed\navigation-common-2.5.3\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1] C:\Users\TUF\.gradle\caches\transforms-3\d1b80e403f64e406d52a196e5d0874ce\transformed\jetified-lifecycle-viewmodel-ktx-2.6.1\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.1] C:\Users\TUF\.gradle\caches\transforms-3\97bab723274e150f5baa87842050422b\transformed\lifecycle-livedata-core-2.6.1\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\TUF\.gradle\caches\transforms-3\d5c08ed2bfd74a9d9b7c1a61b0e8ce51\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:17:1-35:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.1] C:\Users\TUF\.gradle\caches\transforms-3\a695d91cb654e05ed6adba4d819412df\transformed\jetified-lifecycle-livedata-core-ktx-2.6.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\TUF\.gradle\caches\transforms-3\a6adc179d6af20b51be53cc4df0c1585\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\TUF\.gradle\caches\transforms-3\ab5c3979cc875567b9c866b48231f837\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -83,8 +85,8 @@ MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\TUF\.gradle\cach
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] C:\Users\TUF\.gradle\caches\transforms-3\30cc14c84ede5f4fb73d05b48ef5b6c8\transformed\slidingpanelayout-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\TUF\.gradle\caches\transforms-3\e18f31e2274644e26de34de0d2c5a8c7\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\TUF\.gradle\caches\transforms-3\5f94c2cc747c062fec408c8033cc61a2\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.browser:browser:1.4.0] C:\Users\TUF\.gradle\caches\transforms-3\829b7e670d6001afc5f33981d6a0f539\transformed\browser-1.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.transition:transition:1.4.1] C:\Users\TUF\.gradle\caches\transforms-3\dc19523654d1cc0ac4f690d66e674957\transformed\transition-1.4.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.browser:browser:1.4.0] C:\Users\TUF\.gradle\caches\transforms-3\829b7e670d6001afc5f33981d6a0f539\transformed\browser-1.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.window:window:1.0.0] C:\Users\TUF\.gradle\caches\transforms-3\568bcf0cbe69e5a69bd98ac037171db0\transformed\jetified-window-1.0.0\AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.media:media:1.0.0] C:\Users\TUF\.gradle\caches\transforms-3\b551bb3e8038efb1165f9db3b0c1d998\transformed\media-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\TUF\.gradle\caches\transforms-3\3d95559c8ef25fe9d28be32280c9a20f\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -100,33 +102,33 @@ MERGED from [androidx.exifinterface:exifinterface:1.3.3] C:\Users\TUF\.gradle\ca
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\TUF\.gradle\caches\transforms-3\6484bad3618342347b39ea891bc4a847\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:17:1-55:12
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\TUF\.gradle\caches\transforms-3\6930959d3e42a463fed082cce0841d3c\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\TUF\.gradle\caches\transforms-3\d42082749bd6aefbec7cd69d9a677de4\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.1] C:\Users\TUF\.gradle\caches\transforms-3\905d25d4edf081707bd5429dba8587d0\transformed\documentfile-1.0.1\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-components:17.1.0] C:\Users\TUF\.gradle\caches\transforms-3\fba2bc4d8281d75578365c74af2d8a6f\transformed\jetified-firebase-components-17.1.0\AndroidManifest.xml:15:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\TUF\.gradle\caches\transforms-3\5bfa5284fea4cf62b19084b02f356be0\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\TUF\.gradle\caches\transforms-3\8e32f18efe10865e033e95b5df774438\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\TUF\.gradle\caches\transforms-3\4b80cb84f03df8f2f3207bd45df87d40\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\TUF\.gradle\caches\transforms-3\77765b9cbdbf28e5d38e27f489872eaf\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\TUF\.gradle\caches\transforms-3\fd0ab7ba7dd15d127817828efb5fd5c1\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\TUF\.gradle\caches\transforms-3\50287fed858fa34b2f110b3d6bdc8916\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\TUF\.gradle\caches\transforms-3\f949ee4baa2578b97feed10bde5b3ec7\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
 MERGED from [io.grpc:grpc-android:1.52.1] C:\Users\TUF\.gradle\caches\transforms-3\ce61bbcde87f6882742efd94433618c5\transformed\jetified-grpc-android-1.52.1\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.dagger:dagger-lint-aar:2.44.2] C:\Users\TUF\.gradle\caches\transforms-3\ce0772ee590c2e7eed6cf1f81969055f\transformed\jetified-dagger-lint-aar-2.44.2\AndroidManifest.xml:16:1-19:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\TUF\.gradle\caches\transforms-3\28209edc5d6d347ecc11a32cd1f1d21a\transformed\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
-INJECTED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:1-41:12
 	package
 		INJECTED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:1-40:12
+		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:1-41:12
 		INJECTED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:1-40:12
+		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:1-41:12
 		INJECTED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:1-40:12
+		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:1-41:12
 		INJECTED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:2:11-69
@@ -178,20 +180,26 @@ MERGED from [io.grpc:grpc-android:1.52.1] C:\Users\TUF\.gradle\caches\transforms
 		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:6:22-76
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:7:5-8:38
+MERGED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:9:5-80
+MERGED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:9:5-80
 	android:maxSdkVersion
 		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:8:9-35
 	android:name
 		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:7:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:9:5-11:40
+ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:10:5-11:38
+MERGED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:10:5-12:38
+MERGED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:10:5-12:38
 	android:maxSdkVersion
-		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:10:9-35
-	tools:ignore
-		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:11:9-37
+		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:11:9-35
 	android:name
-		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:9:22-78
+		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:10:22-78
+uses-permission#android.permission.READ_MEDIA_IMAGES
+ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:12:5-75
+	android:name
+		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:12:22-73
 application
-ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:13:5-38:19
+ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:14:5-39:19
 MERGED from [com.karumi:dexter:6.2.3] C:\Users\TUF\.gradle\caches\transforms-3\df54a5659fd642d5148f9b8cb8d9f4b4\transformed\jetified-dexter-6.2.3\AndroidManifest.xml:26:5-30:19
 MERGED from [com.karumi:dexter:6.2.3] C:\Users\TUF\.gradle\caches\transforms-3\df54a5659fd642d5148f9b8cb8d9f4b4\transformed\jetified-dexter-6.2.3\AndroidManifest.xml:26:5-30:19
 MERGED from [com.google.android.material:material:1.9.0] C:\Users\TUF\.gradle\caches\transforms-3\f3bd80767c186b9209f4fccdcf45b8d6\transformed\material-1.9.0\AndroidManifest.xml:24:5-20
@@ -200,6 +208,8 @@ MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\TUF\.gra
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\TUF\.gradle\caches\transforms-3\93f91bd369031e1a837ecbd46360d16b\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
 MERGED from [com.tbuonomo:dotsindicator:4.3] C:\Users\TUF\.gradle\caches\transforms-3\3e3a57bca7c388b84bb0e4a88d11474d\transformed\jetified-dotsindicator-4.3-debug\AndroidManifest.xml:9:5-47
 MERGED from [com.tbuonomo:dotsindicator:4.3] C:\Users\TUF\.gradle\caches\transforms-3\3e3a57bca7c388b84bb0e4a88d11474d\transformed\jetified-dotsindicator-4.3-debug\AndroidManifest.xml:9:5-47
+MERGED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:38:5-57:19
+MERGED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:38:5-57:19
 MERGED from [com.github.bumptech.glide:glide:4.15.1] C:\Users\TUF\.gradle\caches\transforms-3\f24edec137c6f698cb1e9a41421180ee\transformed\jetified-glide-4.15.1\AndroidManifest.xml:9:5-20
 MERGED from [com.github.bumptech.glide:glide:4.15.1] C:\Users\TUF\.gradle\caches\transforms-3\f24edec137c6f698cb1e9a41421180ee\transformed\jetified-glide-4.15.1\AndroidManifest.xml:9:5-20
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.6.0] C:\Users\TUF\.gradle\caches\transforms-3\fbd394cd2127762870ffbf8895478cf2\transformed\jetified-firebase-firestore-ktx-24.6.0\AndroidManifest.xml:10:5-18:19
@@ -271,49 +281,49 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\TU
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.10.0] C:\Users\TUF\.gradle\caches\transforms-3\26a6af75c8fd67042ddca72ad578c67d\transformed\core-1.10.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:21:9-35
+		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:22:9-35
 	android:label
-		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:19:9-41
+		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:20:9-41
 	android:fullBackupContent
-		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:17:9-54
+		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:18:9-54
 	android:roundIcon
-		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:20:9-54
+		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:21:9-54
 	tools:targetApi
-		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:23:9-29
+		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:24:9-29
 	android:icon
-		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:18:9-39
+		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:19:9-39
 	android:allowBackup
-		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:15:9-35
+		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:16:9-35
 	android:theme
-		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:22:9-48
+		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:23:9-48
 	android:dataExtractionRules
-		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:16:9-65
+		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:17:9-65
 	android:name
-		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:14:9-28
+		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:15:9-28
 activity#uz.gita.a5.bookreader.MainActivity
-ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:24:9-33:20
+ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:25:9-34:20
 	android:screenOrientation
-		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:25:13-49
+		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:26:13-49
 	android:exported
-		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:27:13-36
+		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:28:13-36
 	android:name
-		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:26:13-41
+		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:27:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:28:13-32:29
+ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:29:13-33:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:29:17-69
+ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:30:17-69
 	android:name
-		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:29:25-66
+		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:30:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:31:17-77
+ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:32:17-77
 	android:name
-		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:31:27-74
+		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:32:27-74
 meta-data#preloaded_fonts
-ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:34:9-36:57
+ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:35:9-37:57
 	android:resource
-		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:36:13-54
+		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:37:13-54
 	android:name
-		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:35:13-43
+		ADDED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml:36:13-43
 uses-sdk
 INJECTED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\TUF\AndroidStudioProjects\Bookreader\app\src\main\AndroidManifest.xml
@@ -332,8 +342,12 @@ MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\TUF\.gra
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\TUF\.gradle\caches\transforms-3\93f91bd369031e1a837ecbd46360d16b\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
 MERGED from [com.tbuonomo:dotsindicator:4.3] C:\Users\TUF\.gradle\caches\transforms-3\3e3a57bca7c388b84bb0e4a88d11474d\transformed\jetified-dotsindicator-4.3-debug\AndroidManifest.xml:5:5-7:41
 MERGED from [com.tbuonomo:dotsindicator:4.3] C:\Users\TUF\.gradle\caches\transforms-3\3e3a57bca7c388b84bb0e4a88d11474d\transformed\jetified-dotsindicator-4.3-debug\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\TUF\.gradle\caches\transforms-3\42fadd24c51549ea26b265b7c4a6b5e8\transformed\jetified-appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\TUF\.gradle\caches\transforms-3\42fadd24c51549ea26b265b7c4a6b5e8\transformed\jetified-appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [com.github.yalantis:ucrop:2.2.7] C:\Users\TUF\.gradle\caches\transforms-3\75bee810252347cd89176678e7bca7b3\transformed\jetified-ucrop-2.2.7\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.yalantis:ucrop:2.2.7] C:\Users\TUF\.gradle\caches\transforms-3\75bee810252347cd89176678e7bca7b3\transformed\jetified-ucrop-2.2.7\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\TUF\.gradle\caches\transforms-3\592e692fe7960d60c3ed72fa29225bb7\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\TUF\.gradle\caches\transforms-3\592e692fe7960d60c3ed72fa29225bb7\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
 MERGED from [com.google.dagger:hilt-android:2.44.2] C:\Users\TUF\.gradle\caches\transforms-3\d00853cef6977c1fa6654433cf4e70e5\transformed\jetified-hilt-android-2.44.2\AndroidManifest.xml:18:3-42
@@ -428,16 +442,16 @@ MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\TUF\.gradle\cac
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\TUF\.gradle\caches\transforms-3\b551881a72c97e8cdece72967df00e24\transformed\jetified-emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\TUF\.gradle\caches\transforms-3\cae849a9f511dbd31cc776fedfdc0036\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:21:5-44
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\TUF\.gradle\caches\transforms-3\cae849a9f511dbd31cc776fedfdc0036\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.1] C:\Users\TUF\.gradle\caches\transforms-3\97bab723274e150f5baa87842050422b\transformed\lifecycle-livedata-core-2.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.1] C:\Users\TUF\.gradle\caches\transforms-3\97bab723274e150f5baa87842050422b\transformed\lifecycle-livedata-core-2.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\TUF\.gradle\caches\transforms-3\d5c08ed2bfd74a9d9b7c1a61b0e8ce51\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\TUF\.gradle\caches\transforms-3\d5c08ed2bfd74a9d9b7c1a61b0e8ce51\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:21:5-44
 MERGED from [androidx.navigation:navigation-common-ktx:2.5.3] C:\Users\TUF\.gradle\caches\transforms-3\55e0023091d8fe51f549e9182fc380be\transformed\navigation-common-ktx-2.5.3\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-common-ktx:2.5.3] C:\Users\TUF\.gradle\caches\transforms-3\55e0023091d8fe51f549e9182fc380be\transformed\navigation-common-ktx-2.5.3\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-common:2.5.3] C:\Users\TUF\.gradle\caches\transforms-3\a393550d4e4126292ac327a9e5651b2b\transformed\navigation-common-2.5.3\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-common:2.5.3] C:\Users\TUF\.gradle\caches\transforms-3\a393550d4e4126292ac327a9e5651b2b\transformed\navigation-common-2.5.3\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1] C:\Users\TUF\.gradle\caches\transforms-3\d1b80e403f64e406d52a196e5d0874ce\transformed\jetified-lifecycle-viewmodel-ktx-2.6.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1] C:\Users\TUF\.gradle\caches\transforms-3\d1b80e403f64e406d52a196e5d0874ce\transformed\jetified-lifecycle-viewmodel-ktx-2.6.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.1] C:\Users\TUF\.gradle\caches\transforms-3\97bab723274e150f5baa87842050422b\transformed\lifecycle-livedata-core-2.6.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.1] C:\Users\TUF\.gradle\caches\transforms-3\97bab723274e150f5baa87842050422b\transformed\lifecycle-livedata-core-2.6.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\TUF\.gradle\caches\transforms-3\d5c08ed2bfd74a9d9b7c1a61b0e8ce51\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:21:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\TUF\.gradle\caches\transforms-3\d5c08ed2bfd74a9d9b7c1a61b0e8ce51\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:21:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.1] C:\Users\TUF\.gradle\caches\transforms-3\a695d91cb654e05ed6adba4d819412df\transformed\jetified-lifecycle-livedata-core-ktx-2.6.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.1] C:\Users\TUF\.gradle\caches\transforms-3\a695d91cb654e05ed6adba4d819412df\transformed\jetified-lifecycle-livedata-core-ktx-2.6.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\TUF\.gradle\caches\transforms-3\a6adc179d6af20b51be53cc4df0c1585\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
@@ -476,10 +490,10 @@ MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\TUF\.gradle\caches\tra
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\TUF\.gradle\caches\transforms-3\e18f31e2274644e26de34de0d2c5a8c7\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\TUF\.gradle\caches\transforms-3\5f94c2cc747c062fec408c8033cc61a2\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\TUF\.gradle\caches\transforms-3\5f94c2cc747c062fec408c8033cc61a2\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.browser:browser:1.4.0] C:\Users\TUF\.gradle\caches\transforms-3\829b7e670d6001afc5f33981d6a0f539\transformed\browser-1.4.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.browser:browser:1.4.0] C:\Users\TUF\.gradle\caches\transforms-3\829b7e670d6001afc5f33981d6a0f539\transformed\browser-1.4.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.transition:transition:1.4.1] C:\Users\TUF\.gradle\caches\transforms-3\dc19523654d1cc0ac4f690d66e674957\transformed\transition-1.4.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.transition:transition:1.4.1] C:\Users\TUF\.gradle\caches\transforms-3\dc19523654d1cc0ac4f690d66e674957\transformed\transition-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.4.0] C:\Users\TUF\.gradle\caches\transforms-3\829b7e670d6001afc5f33981d6a0f539\transformed\browser-1.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.4.0] C:\Users\TUF\.gradle\caches\transforms-3\829b7e670d6001afc5f33981d6a0f539\transformed\browser-1.4.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.window:window:1.0.0] C:\Users\TUF\.gradle\caches\transforms-3\568bcf0cbe69e5a69bd98ac037171db0\transformed\jetified-window-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.window:window:1.0.0] C:\Users\TUF\.gradle\caches\transforms-3\568bcf0cbe69e5a69bd98ac037171db0\transformed\jetified-window-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.media:media:1.0.0] C:\Users\TUF\.gradle\caches\transforms-3\b551bb3e8038efb1165f9db3b0c1d998\transformed\media-1.0.0\AndroidManifest.xml:20:5-44
@@ -510,6 +524,8 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\TUF\.gradle\caches
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\TUF\.gradle\caches\transforms-3\6930959d3e42a463fed082cce0841d3c\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\TUF\.gradle\caches\transforms-3\d42082749bd6aefbec7cd69d9a677de4\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\TUF\.gradle\caches\transforms-3\d42082749bd6aefbec7cd69d9a677de4\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.1] C:\Users\TUF\.gradle\caches\transforms-3\905d25d4edf081707bd5429dba8587d0\transformed\documentfile-1.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.1] C:\Users\TUF\.gradle\caches\transforms-3\905d25d4edf081707bd5429dba8587d0\transformed\documentfile-1.0.1\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-components:17.1.0] C:\Users\TUF\.gradle\caches\transforms-3\fba2bc4d8281d75578365c74af2d8a6f\transformed\jetified-firebase-components-17.1.0\AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-components:17.1.0] C:\Users\TUF\.gradle\caches\transforms-3\fba2bc4d8281d75578365c74af2d8a6f\transformed\jetified-firebase-components-17.1.0\AndroidManifest.xml:18:5-20:41
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\TUF\.gradle\caches\transforms-3\5bfa5284fea4cf62b19084b02f356be0\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
@@ -520,8 +536,6 @@ MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\TUF\.gradle\caches\
 MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\TUF\.gradle\caches\transforms-3\4b80cb84f03df8f2f3207bd45df87d40\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\TUF\.gradle\caches\transforms-3\77765b9cbdbf28e5d38e27f489872eaf\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\TUF\.gradle\caches\transforms-3\77765b9cbdbf28e5d38e27f489872eaf\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\TUF\.gradle\caches\transforms-3\fd0ab7ba7dd15d127817828efb5fd5c1\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\TUF\.gradle\caches\transforms-3\fd0ab7ba7dd15d127817828efb5fd5c1\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] C:\Users\TUF\.gradle\caches\transforms-3\50287fed858fa34b2f110b3d6bdc8916\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] C:\Users\TUF\.gradle\caches\transforms-3\50287fed858fa34b2f110b3d6bdc8916\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\TUF\.gradle\caches\transforms-3\f949ee4baa2578b97feed10bde5b3ec7\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
@@ -550,6 +564,72 @@ ADDED from [com.karumi:dexter:6.2.3] C:\Users\TUF\.gradle\caches\transforms-3\df
 		ADDED from [com.karumi:dexter:6.2.3] C:\Users\TUF\.gradle\caches\transforms-3\df54a5659fd642d5148f9b8cb8d9f4b4\transformed\jetified-dexter-6.2.3\AndroidManifest.xml:29:13-69
 	android:name
 		ADDED from [com.karumi:dexter:6.2.3] C:\Users\TUF\.gradle\caches\transforms-3\df54a5659fd642d5148f9b8cb8d9f4b4\transformed\jetified-dexter-6.2.3\AndroidManifest.xml:28:13-60
+queries
+ADDED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:14:5-36:15
+intent#action:name:android.intent.action.GET_CONTENT+category:name:android.intent.category.OPENABLE+data:mimeType:image/*
+ADDED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:17:9-23:18
+action#android.intent.action.GET_CONTENT
+ADDED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:18:13-72
+	android:name
+		ADDED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:18:21-69
+category#android.intent.category.OPENABLE
+ADDED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:20:13-73
+	android:name
+		ADDED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:20:23-70
+data
+ADDED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:22:13-48
+	android:mimeType
+		ADDED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:22:19-45
+intent#action:name:android.intent.action.PICK+data:mimeType:image/*
+ADDED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:24:9-28:18
+action#android.intent.action.PICK
+ADDED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:25:13-65
+	android:name
+		ADDED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:25:21-62
+intent#action:name:android.intent.action.CHOOSER
+ADDED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:29:9-31:18
+action#android.intent.action.CHOOSER
+ADDED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:30:13-68
+	android:name
+		ADDED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:30:21-65
+intent#action:name:android.media.action.IMAGE_CAPTURE
+ADDED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:33:9-35:18
+action#android.media.action.IMAGE_CAPTURE
+ADDED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:34:13-73
+	android:name
+		ADDED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:34:21-70
+activity#com.github.drjacky.imagepicker.ImagePickerActivity
+ADDED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:39:9-42:68
+	android:screenOrientation
+		ADDED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:41:13-52
+	android:theme
+		ADDED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:42:13-65
+	android:name
+		ADDED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:40:13-78
+activity#com.yalantis.ucrop.UCropActivity
+ADDED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:43:9-46:72
+	android:screenOrientation
+		ADDED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:45:13-49
+	android:theme
+		ADDED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:46:13-69
+	android:name
+		ADDED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:44:13-60
+provider#com.github.drjacky.imagepicker.ImagePickerFileProvider
+ADDED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:48:9-56:20
+	android:grantUriPermissions
+		ADDED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:52:13-47
+	android:authorities
+		ADDED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:50:13-72
+	android:exported
+		ADDED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:51:13-37
+	android:name
+		ADDED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:49:13-82
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:53:13-55:71
+	android:resource
+		ADDED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:55:17-68
+	android:name
+		ADDED from [com.github.Drjacky:ImagePicker:2.1.16] C:\Users\TUF\.gradle\caches\transforms-3\1b100fb6b3bdb5a020594913b4611d88\transformed\jetified-ImagePicker-2.1.16\AndroidManifest.xml:54:17-67
 service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [com.google.firebase:firebase-firestore-ktx:24.6.0] C:\Users\TUF\.gradle\caches\transforms-3\fbd394cd2127762870ffbf8895478cf2\transformed\jetified-firebase-firestore-ktx-24.6.0\AndroidManifest.xml:11:9-17:19
 MERGED from [com.google.firebase:firebase-storage-ktx:20.2.0] C:\Users\TUF\.gradle\caches\transforms-3\06576a76c5adfda015be0aa4e857e42d\transformed\jetified-firebase-storage-ktx-20.2.0\AndroidManifest.xml:11:9-17:19
@@ -648,14 +728,6 @@ category#android.intent.category.BROWSABLE
 ADDED from [com.google.firebase:firebase-auth:22.0.0] C:\Users\TUF\.gradle\caches\transforms-3\be731eb15d235f954e65f673adb1eb24\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:39:17-78
 	android:name
 		ADDED from [com.google.firebase:firebase-auth:22.0.0] C:\Users\TUF\.gradle\caches\transforms-3\be731eb15d235f954e65f673adb1eb24\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:39:27-75
-data
-ADDED from [com.google.firebase:firebase-auth:22.0.0] C:\Users\TUF\.gradle\caches\transforms-3\be731eb15d235f954e65f673adb1eb24\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:41:17-44:51
-	android:path
-		ADDED from [com.google.firebase:firebase-auth:22.0.0] C:\Users\TUF\.gradle\caches\transforms-3\be731eb15d235f954e65f673adb1eb24\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:43:21-37
-	android:host
-		ADDED from [com.google.firebase:firebase-auth:22.0.0] C:\Users\TUF\.gradle\caches\transforms-3\be731eb15d235f954e65f673adb1eb24\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:42:21-49
-	android:scheme
-		ADDED from [com.google.firebase:firebase-auth:22.0.0] C:\Users\TUF\.gradle\caches\transforms-3\be731eb15d235f954e65f673adb1eb24\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:44:21-48
 activity#com.google.firebase.auth.internal.RecaptchaActivity
 ADDED from [com.google.firebase:firebase-auth:22.0.0] C:\Users\TUF\.gradle\caches\transforms-3\be731eb15d235f954e65f673adb1eb24\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:47:9-64:20
 	android:excludeFromRecents

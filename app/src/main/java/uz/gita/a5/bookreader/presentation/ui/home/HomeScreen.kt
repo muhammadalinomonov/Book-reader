@@ -2,8 +2,8 @@ package uz.gita.a5.bookreader.presentation.ui.home
 
 import android.annotation.SuppressLint
 import android.graphics.PorterDuff
+import android.net.Uri
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.core.content.ContextCompat
@@ -12,9 +12,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
-import androidx.recyclerview.widget.LinearLayoutManager
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.bumptech.glide.Glide
 import uz.gita.a5.bookreader.R
 import uz.gita.a5.bookreader.data.model.CategoryData
 import uz.gita.a5.bookreader.data.source.local.MySharedPref
@@ -26,6 +24,8 @@ import uz.gita.a5.bookreader.domain.usecase.explore.HomeUseCase
 import uz.gita.a5.bookreader.domain.usecase.explore.HomeUseCaseImpl
 import uz.gita.a5.bookreader.presentation.adapter.HomeAdapter
 import uz.gita.a5.bookreader.presentation.ui.home.viewmodel.impl.HomeViewModelImpl
+import uz.gita.a5.bookreader.utils.setLocalImage
+
 
 class HomeScreen : Fragment(R.layout.screen_home) {
     private val repository: AppRepository = AppRepositoryImpl.getInstance()
@@ -41,6 +41,7 @@ class HomeScreen : Fragment(R.layout.screen_home) {
         super.onCreate(savedInstanceState)
 
     }
+
     private val sharedPref: MySharedPref = MySharedPrefImpl.getInstance()
 
     @SuppressLint("SetTextI18n", "FragmentLiveDataObserve")
@@ -53,7 +54,11 @@ class HomeScreen : Fragment(R.layout.screen_home) {
             PorterDuff.Mode.SRC_IN
         )
 
-        viewModel.maxProgressLiveData.observe(viewLifecycleOwner){
+        viewModel.userAvatarLiveData.observe(viewLifecycleOwner, avatarObserver)
+        viewModel.userNameLiveData.observe(viewLifecycleOwner, name)
+
+
+        /*viewModel.maxProgressLiveData.observe(viewLifecycleOwner){
             Log.d("@@@", "max$it")
             binding.progressBar3.max = it
         }
@@ -62,7 +67,7 @@ class HomeScreen : Fragment(R.layout.screen_home) {
             Log.d("@@@", "progress${sharedPref.savedPage}")
 
             binding.progressBar3.progress = it
-        }
+        }*/
         progressBar.indeterminateDrawable = progressDrawable
 
         viewModel.loadingLiveData.observe(viewLifecycleOwner, loadingProgressBarObserver)
@@ -72,7 +77,12 @@ class HomeScreen : Fragment(R.layout.screen_home) {
         viewModel.errorLiveData.observe(viewLifecycleOwner, errorData)
 
 
-        if (sharedPref.bookName!!.isEmpty()) {
+
+
+        binding.search.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_searchScreen)
+        }
+        /*if (sharedPref.bookName!!.isEmpty()) {
 
             binding.linear2.visibility = View.GONE
         } else {
@@ -84,17 +94,17 @@ class HomeScreen : Fragment(R.layout.screen_home) {
                     .placeholder(R.drawable.ribbon)
                     .into(lastBookImage)
 
-                /*progressBar3.progress = sharedPref.getSavedPageByBookName(sharedPref.bookName!!)
-                progressBar3.max = sharedPref.totalPage*/
+                *//*progressBar3.progress = sharedPref.getSavedPageByBookName(sharedPref.bookName!!)
+                progressBar3.max = sharedPref.totalPage*//*
 
-                /*Log.d("@@@", "${sharedPref.getSavedPageByBookName(sharedPref.bookName!!)} /${sharedPref.totalPage}")
-                Log.d("@@@", "${progressBar3.progress}  /${progressBar3.max}")*/
+                *//*Log.d("@@@", "${sharedPref.getSavedPageByBookName(sharedPref.bookName!!)} /${sharedPref.totalPage}")
+                Log.d("@@@", "${progressBar3.progress}  /${progressBar3.max}")*//*
 
                 textBookName.text = sharedPref.bookName
             }
-        }
+        }*/
 
-        binding.linear2.setOnClickListener {
+        /*binding.linear2.setOnClickListener {
             val action =
                 HomeScreenDirections.actionHomeFragmentToReadBookScreen(
                     sharedPref.totalPage,
@@ -104,10 +114,10 @@ class HomeScreen : Fragment(R.layout.screen_home) {
                 )
 
             findNavController().navigate(action)
-        }
+        }*/
 
         binding.apply {
-            recycler.layoutManager = LinearLayoutManager(requireContext())
+//            recycler.layoutManager = LinearLayoutManager(requireContext())
             recycler.adapter = adapter
         }
 
@@ -116,6 +126,7 @@ class HomeScreen : Fragment(R.layout.screen_home) {
             findNavController().navigate(HomeScreenDirections.actionHomeFragmentToAboutFragment(it))
         }
     }
+
 
     private val categoriesData = Observer<List<CategoryData>> {
         adapter.setData(it)
@@ -131,5 +142,20 @@ class HomeScreen : Fragment(R.layout.screen_home) {
             binding.progress.hide()
         }
     }
+    private val avatarObserver = Observer<String> {
+        if (it.isEmpty()) {
+            binding.userAvatar.setImageResource(R.drawable.user)
+        } else {
+            binding.userAvatar.setLocalImage(Uri.parse(it), true)
+        }
+    }
+    private val name = Observer<String> {
+        if (it.isEmpty()) {
+            binding.hello.text = "Jooybook"
+        } else {
+            binding.hello.text = "Hello $it"
+        }
+    }
+
 
 }

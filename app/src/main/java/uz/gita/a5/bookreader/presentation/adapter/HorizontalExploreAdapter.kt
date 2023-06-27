@@ -41,7 +41,7 @@ class HorizontalExploreAdapter : Adapter<HorizontalExploreAdapter.ItemViewHolder
                 textBookName.text = book.bookName
                 textAuthor.text = book.author
                 val defaultPage = sharedPref.getSavedPageByBookName(book.bookName)
-                if (defaultPage == 0) {
+                /*if (defaultPage == 0) {
                     percentage.visibility = View.GONE
                     continueRead.visibility = View.GONE
                     btnDownload.visibility = View.VISIBLE
@@ -60,7 +60,7 @@ class HorizontalExploreAdapter : Adapter<HorizontalExploreAdapter.ItemViewHolder
                 }
                 linearStart.setOnClickListener {
                     clickListener?.invoke(book)
-                }
+                }*/
 
                 Glide.with(binding.root.context)
 

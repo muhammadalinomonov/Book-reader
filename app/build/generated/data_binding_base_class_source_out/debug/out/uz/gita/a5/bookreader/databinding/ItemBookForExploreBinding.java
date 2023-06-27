@@ -5,7 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -26,22 +26,10 @@ public final class ItemBookForExploreBinding implements ViewBinding {
   public final ImageView bookImg;
 
   @NonNull
-  public final TextView btnDownload;
+  public final CardView imgCard;
 
   @NonNull
-  public final TextView continueRead;
-
-  @NonNull
-  public final View first;
-
-  @NonNull
-  public final LinearLayout linear;
-
-  @NonNull
-  public final CardView linearStart;
-
-  @NonNull
-  public final TextView percentage;
+  public final ProgressBar progressBar;
 
   @NonNull
   public final TextView textAuthor;
@@ -49,20 +37,24 @@ public final class ItemBookForExploreBinding implements ViewBinding {
   @NonNull
   public final TextView textBookName;
 
+  @NonNull
+  public final TextView txtOfProgress;
+
+  @NonNull
+  public final TextView txtStarted;
+
   private ItemBookForExploreBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView bookImg,
-      @NonNull TextView btnDownload, @NonNull TextView continueRead, @NonNull View first,
-      @NonNull LinearLayout linear, @NonNull CardView linearStart, @NonNull TextView percentage,
-      @NonNull TextView textAuthor, @NonNull TextView textBookName) {
+      @NonNull CardView imgCard, @NonNull ProgressBar progressBar, @NonNull TextView textAuthor,
+      @NonNull TextView textBookName, @NonNull TextView txtOfProgress,
+      @NonNull TextView txtStarted) {
     this.rootView = rootView;
     this.bookImg = bookImg;
-    this.btnDownload = btnDownload;
-    this.continueRead = continueRead;
-    this.first = first;
-    this.linear = linear;
-    this.linearStart = linearStart;
-    this.percentage = percentage;
+    this.imgCard = imgCard;
+    this.progressBar = progressBar;
     this.textAuthor = textAuthor;
     this.textBookName = textBookName;
+    this.txtOfProgress = txtOfProgress;
+    this.txtStarted = txtStarted;
   }
 
   @Override
@@ -98,39 +90,15 @@ public final class ItemBookForExploreBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.btnDownload;
-      TextView btnDownload = ViewBindings.findChildViewById(rootView, id);
-      if (btnDownload == null) {
+      id = R.id.img_card;
+      CardView imgCard = ViewBindings.findChildViewById(rootView, id);
+      if (imgCard == null) {
         break missingId;
       }
 
-      id = R.id.continueRead;
-      TextView continueRead = ViewBindings.findChildViewById(rootView, id);
-      if (continueRead == null) {
-        break missingId;
-      }
-
-      id = R.id.first;
-      View first = ViewBindings.findChildViewById(rootView, id);
-      if (first == null) {
-        break missingId;
-      }
-
-      id = R.id.linear;
-      LinearLayout linear = ViewBindings.findChildViewById(rootView, id);
-      if (linear == null) {
-        break missingId;
-      }
-
-      id = R.id.linearStart;
-      CardView linearStart = ViewBindings.findChildViewById(rootView, id);
-      if (linearStart == null) {
-        break missingId;
-      }
-
-      id = R.id.percentage;
-      TextView percentage = ViewBindings.findChildViewById(rootView, id);
-      if (percentage == null) {
+      id = R.id.progressBar;
+      ProgressBar progressBar = ViewBindings.findChildViewById(rootView, id);
+      if (progressBar == null) {
         break missingId;
       }
 
@@ -146,8 +114,20 @@ public final class ItemBookForExploreBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemBookForExploreBinding((ConstraintLayout) rootView, bookImg, btnDownload,
-          continueRead, first, linear, linearStart, percentage, textAuthor, textBookName);
+      id = R.id.txt_of_progress;
+      TextView txtOfProgress = ViewBindings.findChildViewById(rootView, id);
+      if (txtOfProgress == null) {
+        break missingId;
+      }
+
+      id = R.id.txt_started;
+      TextView txtStarted = ViewBindings.findChildViewById(rootView, id);
+      if (txtStarted == null) {
+        break missingId;
+      }
+
+      return new ItemBookForExploreBinding((ConstraintLayout) rootView, bookImg, imgCard,
+          progressBar, textAuthor, textBookName, txtOfProgress, txtStarted);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

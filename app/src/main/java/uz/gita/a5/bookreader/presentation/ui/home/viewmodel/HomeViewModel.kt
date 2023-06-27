@@ -10,5 +10,7 @@ interface HomeViewModel {
     val maxProgressLiveData:LiveData<Int>
     val progressLiveData:LiveData<Int>
 
+    val userAvatarLiveData:LiveData<String>
+    val userNameLiveData:LiveData<String>
     fun getBooksByCategoryData()
 }

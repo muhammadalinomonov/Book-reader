@@ -66,4 +66,6 @@ class HomeAdapter : Adapter<HomeAdapter.ItemViewHolder>() {
         holder.bind(list[position])
     }
 
+
+
 }

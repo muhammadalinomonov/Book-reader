@@ -6,8 +6,12 @@ interface MySharedPref {
     var totalPage: Int
     var isFirst: Boolean
     var bookUrl: String
+    var name:String
+    var imageUri:String
 
 
     fun savedPageByBookName(bookName: String, page: Int)
     fun getSavedPageByBookName(bookName: String): Int
+
+
 }

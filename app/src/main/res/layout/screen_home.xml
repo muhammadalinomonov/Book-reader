@@ -12,27 +12,45 @@
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:background="@color/gray"
+        android:elevation="8dp"
         android:gravity="center"
-        android:orientation="vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:elevation="8dp"
+            android:id="@+id/hello"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:gravity="center"
             android:layout_gravity="start|center"
             android:layout_marginStart="16dp"
+            android:elevation="8dp"
+            android:gravity="center"
             android:text="Jooybook"
             android:textColor="@color/white"
             android:textSize="26sp"
             android:textStyle="bold" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_marginEnd="10dp"
+            android:id="@+id/user_avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/user"
+            app:layout_constraintTop_toBottomOf="@id/action_bar"
+            app:shapeAppearanceOverlay="@style/ShapeImageView" />
+
     </LinearLayout>
 
 
 
 
-    <LinearLayout
+    <!--<LinearLayout
 
         android:elevation="8dp"
         android:visibility="visible"
@@ -106,33 +124,58 @@
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </LinearLayout>
+    </LinearLayout>-->
 
+
+    <EditText
+        android:focusable="false"
+        android:clickable="false"
+        android:id="@+id/se"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_for_edit"
+        android:drawableEnd="@drawable/search"
+        android:hint="Search..."
+        android:paddingStart="12dp"
+        android:paddingEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dddd" />
+    <View
+        android:id="@+id/search"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@id/se"
+        app:layout_constraintBottom_toBottomOf="@id/se"
+        app:layout_constraintStart_toStartOf="@id/se"
+        app:layout_constraintEnd_toEndOf="@id/se"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_goneMarginTop="40dp"
         android:layout_marginTop="10dp"
         android:id="@+id/home_second_layout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        
         android:background="#F0F6FB"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linear2"
+        app:layout_constraintTop_toBottomOf="@id/search"
         app:layout_constraintVertical_bias="0.0">
-
 
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:listitem="@layout/item_book" />
+            tools:listitem="@layout/vertical_item" />
 
         <androidx.core.widget.ContentLoadingProgressBar
             android:background="#F0F6FB"

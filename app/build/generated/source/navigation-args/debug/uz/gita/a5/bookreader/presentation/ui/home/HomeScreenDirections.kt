@@ -2,6 +2,7 @@ package uz.gita.a5.bookreader.presentation.ui.home
 
 import android.os.Bundle
 import android.os.Parcelable
+import androidx.navigation.ActionOnlyNavDirections
 import androidx.navigation.NavDirections
 import java.io.Serializable
 import java.lang.UnsupportedOperationException
@@ -62,5 +63,8 @@ public class HomeScreenDirections private constructor() {
       imageUrl: String,
       savedPage: Int = 0
     ): NavDirections = ActionHomeFragmentToReadBookScreen(totalPage, bookName, imageUrl, savedPage)
+
+    public fun actionHomeFragmentToSearchScreen(): NavDirections =
+        ActionOnlyNavDirections(R.id.action_homeFragment_to_searchScreen)
   }
 }

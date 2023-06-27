@@ -16,7 +16,9 @@
     </string-array>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/amiko_semibold</item>
+        <item>@font/anton</item>
         <item>@font/athiti_medium</item>
+        <item>@font/baloo_tammudu_2_medium</item>
         <item>@font/baloo_tammudu_2_semibold</item>
         <item>@font/jost_semibold</item>
     </array>
@@ -27,7 +29,7 @@
     <color name="progress">#2191F4</color>
     <color name="transparent">#F0F6FB</color>
     <color name="white">#FFFFFFFF</color>
-    <string name="app_name">E Book</string>
+    <string name="app_name">E-Book</string>
     <string name="default_web_client_id" translatable="false">574610653302-ru2nmvg5aat8hamntflif58qilmdphko.apps.googleusercontent.com</string>
     <string name="delete">Do you want delete %s from your saved book list?</string>
     <string name="gcm_defaultSenderId" translatable="false">574610653302</string>
@@ -40,7 +42,11 @@
     <style name="Base.Theme.BookReader" parent="Theme.Material3.DayNight.NoActionBar">
         
         
-        <item name="android:statusBarColor">#105B7C</item>
+        <item name="android:statusBarColor">@color/gray</item>
+       
+    </style>
+    <style name="ShapeImageView" parent="">
+        <item name="cornerSize">50%</item>
     </style>
     <style name="Theme.BookReader" parent="Base.Theme.BookReader"/>
 </resources>

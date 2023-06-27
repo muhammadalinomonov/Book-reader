@@ -4,9 +4,8 @@ package uz.gita.a5.bookreader.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
+import android.widget.EditText;
 import android.widget.LinearLayout;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -15,6 +14,7 @@ import androidx.core.widget.ContentLoadingProgressBar;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.google.android.material.imageview.ShapeableImageView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -28,44 +28,39 @@ public final class ScreenHomeBinding implements ViewBinding {
   public final LinearLayout dddd;
 
   @NonNull
+  public final TextView hello;
+
+  @NonNull
   public final ConstraintLayout homeSecondLayout;
-
-  @NonNull
-  public final ImageView lastBookImage;
-
-  @NonNull
-  public final LinearLayout linear2;
 
   @NonNull
   public final ContentLoadingProgressBar progress;
 
   @NonNull
-  public final ProgressBar progressBar3;
-
-  @NonNull
   public final RecyclerView recycler;
 
   @NonNull
-  public final TextView textBookName;
+  public final EditText se;
 
   @NonNull
-  public final TextView txt;
+  public final View search;
+
+  @NonNull
+  public final ShapeableImageView userAvatar;
 
   private ScreenHomeBinding(@NonNull ConstraintLayout rootView, @NonNull LinearLayout dddd,
-      @NonNull ConstraintLayout homeSecondLayout, @NonNull ImageView lastBookImage,
-      @NonNull LinearLayout linear2, @NonNull ContentLoadingProgressBar progress,
-      @NonNull ProgressBar progressBar3, @NonNull RecyclerView recycler,
-      @NonNull TextView textBookName, @NonNull TextView txt) {
+      @NonNull TextView hello, @NonNull ConstraintLayout homeSecondLayout,
+      @NonNull ContentLoadingProgressBar progress, @NonNull RecyclerView recycler,
+      @NonNull EditText se, @NonNull View search, @NonNull ShapeableImageView userAvatar) {
     this.rootView = rootView;
     this.dddd = dddd;
+    this.hello = hello;
     this.homeSecondLayout = homeSecondLayout;
-    this.lastBookImage = lastBookImage;
-    this.linear2 = linear2;
     this.progress = progress;
-    this.progressBar3 = progressBar3;
     this.recycler = recycler;
-    this.textBookName = textBookName;
-    this.txt = txt;
+    this.se = se;
+    this.search = search;
+    this.userAvatar = userAvatar;
   }
 
   @Override
@@ -101,21 +96,15 @@ public final class ScreenHomeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.hello;
+      TextView hello = ViewBindings.findChildViewById(rootView, id);
+      if (hello == null) {
+        break missingId;
+      }
+
       id = R.id.home_second_layout;
       ConstraintLayout homeSecondLayout = ViewBindings.findChildViewById(rootView, id);
       if (homeSecondLayout == null) {
-        break missingId;
-      }
-
-      id = R.id.lastBookImage;
-      ImageView lastBookImage = ViewBindings.findChildViewById(rootView, id);
-      if (lastBookImage == null) {
-        break missingId;
-      }
-
-      id = R.id.linear2;
-      LinearLayout linear2 = ViewBindings.findChildViewById(rootView, id);
-      if (linear2 == null) {
         break missingId;
       }
 
@@ -125,32 +114,32 @@ public final class ScreenHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.progressBar3;
-      ProgressBar progressBar3 = ViewBindings.findChildViewById(rootView, id);
-      if (progressBar3 == null) {
-        break missingId;
-      }
-
       id = R.id.recycler;
       RecyclerView recycler = ViewBindings.findChildViewById(rootView, id);
       if (recycler == null) {
         break missingId;
       }
 
-      id = R.id.text_book_name;
-      TextView textBookName = ViewBindings.findChildViewById(rootView, id);
-      if (textBookName == null) {
+      id = R.id.se;
+      EditText se = ViewBindings.findChildViewById(rootView, id);
+      if (se == null) {
         break missingId;
       }
 
-      id = R.id.txt;
-      TextView txt = ViewBindings.findChildViewById(rootView, id);
-      if (txt == null) {
+      id = R.id.search;
+      View search = ViewBindings.findChildViewById(rootView, id);
+      if (search == null) {
         break missingId;
       }
 
-      return new ScreenHomeBinding((ConstraintLayout) rootView, dddd, homeSecondLayout,
-          lastBookImage, linear2, progress, progressBar3, recycler, textBookName, txt);
+      id = R.id.user_avatar;
+      ShapeableImageView userAvatar = ViewBindings.findChildViewById(rootView, id);
+      if (userAvatar == null) {
+        break missingId;
+      }
+
+      return new ScreenHomeBinding((ConstraintLayout) rootView, dddd, hello, homeSecondLayout,
+          progress, recycler, se, search, userAvatar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

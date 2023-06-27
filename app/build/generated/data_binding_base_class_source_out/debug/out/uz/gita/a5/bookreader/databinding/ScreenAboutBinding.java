@@ -4,6 +4,7 @@ package uz.gita.a5.bookreader.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -31,9 +32,6 @@ public final class ScreenAboutBinding implements ViewBinding {
   public final ConstraintLayout appBar;
 
   @NonNull
-  public final AppCompatTextView author;
-
-  @NonNull
   public final AppCompatImageView btnBack;
 
   @NonNull
@@ -43,10 +41,10 @@ public final class ScreenAboutBinding implements ViewBinding {
   public final CardView btnRead;
 
   @NonNull
-  public final AppCompatTextView genre;
+  public final CardView card;
 
   @NonNull
-  public final AppCompatImageView imgBook;
+  public final ImageView imgBook;
 
   @NonNull
   public final ContentLoadingProgressBar progress;
@@ -61,33 +59,26 @@ public final class ScreenAboutBinding implements ViewBinding {
   public final AppCompatTextView txtDescription;
 
   @NonNull
-  public final TextView txtGenre;
-
-  @NonNull
   public final AppCompatTextView txtName;
 
   private ScreenAboutBinding(@NonNull ConstraintLayout rootView, @NonNull TextView about,
-      @NonNull ConstraintLayout appBar, @NonNull AppCompatTextView author,
-      @NonNull AppCompatImageView btnBack, @NonNull AppCompatImageView btnDownload,
-      @NonNull CardView btnRead, @NonNull AppCompatTextView genre,
-      @NonNull AppCompatImageView imgBook, @NonNull ContentLoadingProgressBar progress,
+      @NonNull ConstraintLayout appBar, @NonNull AppCompatImageView btnBack,
+      @NonNull AppCompatImageView btnDownload, @NonNull CardView btnRead, @NonNull CardView card,
+      @NonNull ImageView imgBook, @NonNull ContentLoadingProgressBar progress,
       @NonNull NestedScrollView total, @NonNull TextView txtAuthor,
-      @NonNull AppCompatTextView txtDescription, @NonNull TextView txtGenre,
-      @NonNull AppCompatTextView txtName) {
+      @NonNull AppCompatTextView txtDescription, @NonNull AppCompatTextView txtName) {
     this.rootView = rootView;
     this.about = about;
     this.appBar = appBar;
-    this.author = author;
     this.btnBack = btnBack;
     this.btnDownload = btnDownload;
     this.btnRead = btnRead;
-    this.genre = genre;
+    this.card = card;
     this.imgBook = imgBook;
     this.progress = progress;
     this.total = total;
     this.txtAuthor = txtAuthor;
     this.txtDescription = txtDescription;
-    this.txtGenre = txtGenre;
     this.txtName = txtName;
   }
 
@@ -130,12 +121,6 @@ public final class ScreenAboutBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.author;
-      AppCompatTextView author = ViewBindings.findChildViewById(rootView, id);
-      if (author == null) {
-        break missingId;
-      }
-
       id = R.id.btnBack;
       AppCompatImageView btnBack = ViewBindings.findChildViewById(rootView, id);
       if (btnBack == null) {
@@ -154,14 +139,14 @@ public final class ScreenAboutBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.genre;
-      AppCompatTextView genre = ViewBindings.findChildViewById(rootView, id);
-      if (genre == null) {
+      id = R.id.card;
+      CardView card = ViewBindings.findChildViewById(rootView, id);
+      if (card == null) {
         break missingId;
       }
 
       id = R.id.imgBook;
-      AppCompatImageView imgBook = ViewBindings.findChildViewById(rootView, id);
+      ImageView imgBook = ViewBindings.findChildViewById(rootView, id);
       if (imgBook == null) {
         break missingId;
       }
@@ -190,21 +175,14 @@ public final class ScreenAboutBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.txtGenre;
-      TextView txtGenre = ViewBindings.findChildViewById(rootView, id);
-      if (txtGenre == null) {
-        break missingId;
-      }
-
       id = R.id.txtName;
       AppCompatTextView txtName = ViewBindings.findChildViewById(rootView, id);
       if (txtName == null) {
         break missingId;
       }
 
-      return new ScreenAboutBinding((ConstraintLayout) rootView, about, appBar, author, btnBack,
-          btnDownload, btnRead, genre, imgBook, progress, total, txtAuthor, txtDescription,
-          txtGenre, txtName);
+      return new ScreenAboutBinding((ConstraintLayout) rootView, about, appBar, btnBack,
+          btnDownload, btnRead, card, imgBook, progress, total, txtAuthor, txtDescription, txtName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -3,11 +3,15 @@
     <style name="Base.Theme.BookReader" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-        <item name="android:statusBarColor">#105B7C</item>
+        <item name="android:statusBarColor">@color/gray</item>
+       <!-- <item name="android:navigationBarColor">@color/gray</item>-->
     </style>
 
     <style name="Theme.BookReader" parent="Base.Theme.BookReader" />
     <!-- Base application theme. -->
 
+    <style name="ShapeImageView" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
 
 </resources>

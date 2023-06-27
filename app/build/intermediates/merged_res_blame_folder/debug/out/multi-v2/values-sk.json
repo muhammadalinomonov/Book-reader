@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "uz.gita.a5.bookreader.app-mergeDebugResources-56:/values-sk/values-sk.xml",
+            "outputFile": "uz.gita.a5.bookreader.app-mergeDebugResources-58:/values-sk/values-sk.xml",
             "map": [
                 {
                     "source": "C:\\Users\\TUF\\.gradle\\caches\\transforms-3\\cade679e059dcf64937c045f78aae160\\transformed\\jetified-play-services-base-18.0.1\\res\\values-sk\\values.xml",
@@ -52,6 +52,23 @@
                         "startOffsets": "6848,7119,7222,7337",
                         "endColumns": "106,102,114,101",
                         "endOffsets": "6950,7217,7332,7434"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\TUF\\.gradle\\caches\\transforms-3\\75bee810252347cd89176678e7bca7b3\\transformed\\jetified-ucrop-2.2.7\\res\\values-sk\\values-sk.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,125,182",
+                        "endColumns": "69,56,50",
+                        "endOffsets": "120,177,228"
+                    },
+                    "to": {
+                        "startLines": "130,131,132",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "11862,11932,11989",
+                        "endColumns": "69,56,50",
+                        "endOffsets": "11927,11984,12035"
                     }
                 },
                 {

@@ -25,6 +25,8 @@ class HomeViewModelImpl(private val useCase: HomeUseCase) : ViewModel(), HomeVie
     override val loadingLiveData = MutableLiveData<Boolean>()
     override val maxProgressLiveData = MutableLiveData(sharedPref.totalPage)
     override val progressLiveData = MutableLiveData(sharedPref.savedPage)
+    override val userAvatarLiveData:MutableLiveData<String> = MutableLiveData(sharedPref.imageUri)
+    override val userNameLiveData:MutableLiveData<String> = MutableLiveData(sharedPref.name)
 
 
     init {
@@ -33,6 +35,8 @@ class HomeViewModelImpl(private val useCase: HomeUseCase) : ViewModel(), HomeVie
 
     override fun getBooksByCategoryData() {
 
+        userAvatarLiveData.value = sharedPref.imageUri
+        userNameLiveData.value = sharedPref.name
         progressLiveData.value = sharedPref.savedPage
         loadingLiveData.value = true
         useCase.getBooksByCategoryData().onEach {

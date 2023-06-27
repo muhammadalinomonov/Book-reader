@@ -51,10 +51,10 @@ class ExploreScreen : Fragment(R.layout.screen_explore) {
         }
 
 
-        adapter.setClickBookListener {
+        /*adapter.setClickBookListener {
             val action = ExploreScreenDirections.actionExploreFragmentToAboutFragment(it)
             findNavController().navigate(action)
-        }
+        }*/
     }
 
     private val booksObserver = Observer<List<BookData>> {

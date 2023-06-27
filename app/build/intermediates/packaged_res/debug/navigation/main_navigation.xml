@@ -17,6 +17,10 @@
         <action
             android:id="@+id/action_homeFragment_to_readBookScreen"
             app:destination="@id/readBookScreen" />
+        <action
+            android:id="@+id/action_homeFragment_to_searchScreen"
+            app:destination="@id/searchScreen"
+            app:enterAnim="@anim/slide_in_bottom" />
 
     </fragment>
 
@@ -30,15 +34,7 @@
             app:destination="@id/readBookScreen" />
     </fragment>
 
-    <fragment
-        android:id="@+id/exploreFragment"
-        android:name="uz.gita.a5.bookreader.presentation.ui.explore.ExploreScreen"
-        android:label="ExploreFragment"
-        tools:layout="@layout/screen_explore">
-        <action
-            android:id="@+id/action_exploreFragment_to_aboutFragment"
-            app:destination="@id/aboutFragment" />
-    </fragment>
+
 
     <fragment
         android:id="@+id/aboutFragment"
@@ -71,6 +67,18 @@
             android:name="imageUrl"
             app:argType="string" />
     </fragment>
+    <fragment
+        android:id="@+id/searchScreen"
+        android:name="uz.gita.a5.bookreader.presentation.ui.search.SearchScreen"
+        android:label="SearchScreen" >
+        <action
+            android:id="@+id/action_searchScreen_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileScreen"
+        android:name="uz.gita.a5.bookreader.presentation.ui.profile.ProfileScreen"
+        android:label="ProfileScreen" />
 
     <!--read-->
     <!--<fragment

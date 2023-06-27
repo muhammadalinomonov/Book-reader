@@ -4,12 +4,13 @@ package uz.gita.a5.bookreader.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.AppCompatImageView;
 import androidx.cardview.widget.CardView;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import java.lang.NullPointerException;
@@ -19,33 +20,45 @@ import uz.gita.a5.bookreader.R;
 
 public final class ItemSavedBookBinding implements ViewBinding {
   @NonNull
-  private final CardView rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
-  public final AppCompatImageView btnDelete;
+  public final ImageView btnDelete;
 
   @NonNull
-  public final AppCompatImageView imgIcon;
+  public final CardView imgCard;
+
+  @NonNull
+  public final ImageView imgIcon;
 
   @NonNull
   public final ProgressBar progress;
 
   @NonNull
+  public final TextView textAuthor;
+
+  @NonNull
+  public final TextView txtOfProgress;
+
+  @NonNull
   public final TextView txtTitle;
 
-  private ItemSavedBookBinding(@NonNull CardView rootView, @NonNull AppCompatImageView btnDelete,
-      @NonNull AppCompatImageView imgIcon, @NonNull ProgressBar progress,
-      @NonNull TextView txtTitle) {
+  private ItemSavedBookBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView btnDelete,
+      @NonNull CardView imgCard, @NonNull ImageView imgIcon, @NonNull ProgressBar progress,
+      @NonNull TextView textAuthor, @NonNull TextView txtOfProgress, @NonNull TextView txtTitle) {
     this.rootView = rootView;
     this.btnDelete = btnDelete;
+    this.imgCard = imgCard;
     this.imgIcon = imgIcon;
     this.progress = progress;
+    this.textAuthor = textAuthor;
+    this.txtOfProgress = txtOfProgress;
     this.txtTitle = txtTitle;
   }
 
   @Override
   @NonNull
-  public CardView getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -70,14 +83,20 @@ public final class ItemSavedBookBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btnDelete;
-      AppCompatImageView btnDelete = ViewBindings.findChildViewById(rootView, id);
+      id = R.id.btn_delete;
+      ImageView btnDelete = ViewBindings.findChildViewById(rootView, id);
       if (btnDelete == null) {
         break missingId;
       }
 
-      id = R.id.imgIcon;
-      AppCompatImageView imgIcon = ViewBindings.findChildViewById(rootView, id);
+      id = R.id.img_card;
+      CardView imgCard = ViewBindings.findChildViewById(rootView, id);
+      if (imgCard == null) {
+        break missingId;
+      }
+
+      id = R.id.img_icon;
+      ImageView imgIcon = ViewBindings.findChildViewById(rootView, id);
       if (imgIcon == null) {
         break missingId;
       }
@@ -88,13 +107,26 @@ public final class ItemSavedBookBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.text_author;
+      TextView textAuthor = ViewBindings.findChildViewById(rootView, id);
+      if (textAuthor == null) {
+        break missingId;
+      }
+
+      id = R.id.txt_of_progress;
+      TextView txtOfProgress = ViewBindings.findChildViewById(rootView, id);
+      if (txtOfProgress == null) {
+        break missingId;
+      }
+
       id = R.id.txtTitle;
       TextView txtTitle = ViewBindings.findChildViewById(rootView, id);
       if (txtTitle == null) {
         break missingId;
       }
 
-      return new ItemSavedBookBinding((CardView) rootView, btnDelete, imgIcon, progress, txtTitle);
+      return new ItemSavedBookBinding((ConstraintLayout) rootView, btnDelete, imgCard, imgIcon,
+          progress, textAuthor, txtOfProgress, txtTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

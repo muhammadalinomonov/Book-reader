@@ -33,7 +33,7 @@ class AboutScreen : Fragment(R.layout.screen_about) {
         binding.apply {
             txtName.text = bookData.bookName
             txtAuthor.text = bookData.author
-            txtGenre.text = bookData.genre
+
             txtDescription.text = bookData.description
 //            txtStar.text = "Book Stars: ${bookData.startSize}"
 

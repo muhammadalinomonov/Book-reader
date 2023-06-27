@@ -14,7 +14,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
-import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import by.kirich1409.viewbindingdelegate.viewBinding
 import uz.gita.a5.bookreader.R
 import uz.gita.a5.bookreader.data.source.local.impl.MySharedPrefImpl
@@ -85,7 +85,8 @@ class SavedScreen : Fragment(R.layout.screen_saved) {
 
         }
         binding.apply {
-            recycler.layoutManager = GridLayoutManager(requireContext(), 2)
+            recycler.layoutManager =
+                LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
             recycler.adapter = adapter
         }
 
@@ -122,6 +123,7 @@ class SavedScreen : Fragment(R.layout.screen_saved) {
             Toast.makeText(requireContext(), it, Toast.LENGTH_SHORT).show()
         }
     }
+
     private val loadingProgressBarObserver = Observer<Boolean> {
         if (it) {
             binding.progress.show()
