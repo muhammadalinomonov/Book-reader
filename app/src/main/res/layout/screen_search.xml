@@ -15,6 +15,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <EditText
+            android:inputType="text"
             android:id="@+id/search_field"
             android:layout_gravity="center"
             android:layout_marginHorizontal="16dp"
@@ -26,7 +27,8 @@
             android:layout_height="40dp"
             android:drawableEnd="@drawable/search"
             android:background="@drawable/bg_for_edit"
-            tools:ignore="RtlSymmetry" />
+            tools:ignore="HardcodedText,RtlSymmetry"
+            android:autofillHints="Search..." />
     </LinearLayout>
 
 
@@ -75,7 +77,8 @@
         android:textStyle="bold"
         android:layout_marginTop="-30dp"
         android:visibility="gone"
-        app:layout_constraintTop_toBottomOf="@id/placeholder"/>
+        app:layout_constraintTop_toBottomOf="@id/placeholder"
+        tools:ignore="HardcodedText" />
 
 
     <androidx.core.widget.ContentLoadingProgressBar
