@@ -86,7 +86,7 @@ class SavedScreen : Fragment(R.layout.screen_saved) {
         }
         binding.apply {
             recycler.layoutManager =
-                LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
+                LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
             recycler.adapter = adapter
         }
 

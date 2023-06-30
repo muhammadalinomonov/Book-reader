@@ -43,6 +43,7 @@ drawable ic_back
 drawable ic_book
 drawable ic_bookmark
 drawable ic_camera
+drawable ic_camera_2
 drawable ic_checked
 drawable ic_delete
 drawable ic_download
@@ -58,6 +59,7 @@ drawable ic_person
 drawable ic_saved
 drawable ic_share
 drawable ic_star
+drawable ic_star2
 drawable ic_user
 drawable img
 drawable img_1
