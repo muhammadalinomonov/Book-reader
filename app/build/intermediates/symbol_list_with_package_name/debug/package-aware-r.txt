@@ -4147,6 +4147,7 @@ layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout page
+layout sample
 layout screen_about
 layout screen_explore
 layout screen_home
@@ -4382,6 +4383,7 @@ string path_password_strike_through
 string permission_camera_denied
 string permission_camera_extended_denied
 string permission_gallery_denied
+string privacy
 string project_id
 string search_menu_title
 string searchbar_scrolling_view_behavior

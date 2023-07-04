@@ -181,6 +181,7 @@ layout item_one_book
 layout item_page
 layout item_saved_book
 layout page
+layout sample
 layout screen_about
 layout screen_explore
 layout screen_home
@@ -207,6 +208,7 @@ string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
 string hello_blank_fragment
+string privacy
 string project_id
 style Base.Theme.BookReader
 style ShapeImageView

@@ -13,17 +13,17 @@ class ProfileViewModelImpl :ViewModel(), ProfileViewModel {
 
     override val nameLiveData :MutableLiveData<String> = MutableLiveData<String>(sharedPreferences.name)
     override val imageLiveData :MutableLiveData<String> = MutableLiveData<String>(sharedPreferences.imageUri)
-    override val changeNameLiveData = MutableLiveData<Unit>()
+    /*override val changeNameLiveData = MutableLiveData<Unit>()
     override val changeImageLiveData = MutableLiveData<Unit>()
     override val aboutUsLiveData = MutableLiveData<Unit>()
     override val contactLiveData = MutableLiveData<Unit>()
     override val supportLiveData = MutableLiveData<Unit>()
-
-    override fun changeName() {
+*/
+    /*override fun changeName() {
         changeNameLiveData.postValue(Unit)
-    }
+    }*/
 
-    override fun changeImage() {
+   /* override fun changeImage() {
         changeImageLiveData.postValue(Unit)
     }
 
@@ -37,7 +37,7 @@ class ProfileViewModelImpl :ViewModel(), ProfileViewModel {
 
     override fun supportClicked() {
         supportLiveData.postValue(Unit)
-    }
+    }*/
 
     override fun setName(name: String) {
         sharedPreferences.name = name

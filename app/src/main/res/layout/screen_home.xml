@@ -160,38 +160,37 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        app:layout_goneMarginTop="40dp"
-        android:layout_marginTop="10dp"
         android:id="@+id/home_second_layout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="#F0F6FB"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+        android:background="#F0F6FB"
         app:layout_constraintTop_toBottomOf="@id/search"
-        app:layout_constraintVertical_bias="0.0">
+        android:layout_marginTop="8dp"
+        tools:layout_editor_absoluteY="110dp">
 
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycler"
-            android:layout_width="708dp"
-            android:layout_height="914dp"
-            android:orientation="vertical"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.437"
+            tools:itemCount="21"
+            tools:layout_editor_absoluteX="0dp"
             tools:listitem="@layout/vertical_item" />
 
         <androidx.core.widget.ContentLoadingProgressBar
-            android:background="#F0F6FB"
             android:id="@+id/progress"
             style="?android:attr/progressBarStyleLarge"
             android:layout_width="match_parent"
-            android:padding="160dp"
             android:layout_height="match_parent"
             android:layout_gravity="center"
+            android:background="#F0F6FB"
+            android:padding="160dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"

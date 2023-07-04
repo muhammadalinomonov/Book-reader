@@ -38,6 +38,7 @@
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDYuCnXGITpMcI5tGIFO20lYjlgJgV0gYU</string>
     <string name="google_storage_bucket" translatable="false">book-reader-44148.appspot.com</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="privacy">https://www.freeprivacypolicy.com/live/24e0d63e-308a-4295-bb76-f05f445991b6</string>
     <string name="project_id" translatable="false">book-reader-44148</string>
     <style name="Base.Theme.BookReader" parent="Theme.Material3.DayNight.NoActionBar">
         

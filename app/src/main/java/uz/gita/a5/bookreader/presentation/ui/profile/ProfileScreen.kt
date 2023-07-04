@@ -40,11 +40,12 @@ class ProfileScreen : Fragment(R.layout.screen_profile) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        viewModel.changeNameLiveData.observe(this, changeNameObserver)
+
+        /*viewModel.changeNameLiveData.observe(this, changeNameObserver)
         viewModel.changeImageLiveData.observe(this, changeImageObserver)
         viewModel.aboutUsLiveData.observe(this, shareAppObserver)
         viewModel.contactLiveData.observe(this, contactObserver)
-        viewModel.supportLiveData.observe(this, supportObserver)
+        viewModel.supportLiveData.observe(this, supportObserver)*/
     }
 
 
@@ -53,33 +54,66 @@ class ProfileScreen : Fragment(R.layout.screen_profile) {
         binding.apply {
 
             tvChangeUserName.setOnClickListener {
-                viewModel.changeName()
+
+                val dialog = ChangeNameDialog(requireContext(), viewModel.nameLiveData.value!!)
+                dialog.show()
+                dialog.setChangeListener {
+                    viewModel.setName(it)
+                }
+//                viewModel.changeName()
             }
             tvChangeImageIcon.setOnClickListener {
-                viewModel.changeImage()
+                ImagePicker.with(requireActivity())
+                    .crop()
+                    .cropOval()
+                    .maxResultSize(512, 512, true)
+                    .provider(ImageProvider.BOTH)
+                    .createIntentFromDialog {
+                        profileLauncher.launch(it)
+                    }
+//                viewModel.changeImage()
             }
             tvAboutUs.setOnClickListener {
-                viewModel.aboutClicked()
+
+                val intent = Intent(Intent.ACTION_SEND)
+                intent.type = "text/plain"
+                intent.putExtra(Intent.EXTRA_SUBJECT, "E-book")
+                intent.putExtra(
+                    Intent.EXTRA_TEXT,
+                    "link: https://play.google.com/store/apps/details?id=uz.gita.a5.bookreader"
+                )
+                startActivity(Intent.createChooser(intent, "E-Book"))
+//                goToPlayMarket(activity as MainActivity)
+//                viewModel.aboutClicked()
             }
             tvHelp.setOnClickListener {
-                viewModel.helpClicked()
+
+                val intent =
+                    Intent(
+                        Intent.ACTION_SENDTO,
+                        Uri.fromParts("mailto", "muhammadalinomonov837@gmail.com", null)
+                    )
+                intent.putExtra(Intent.EXTRA_SUBJECT, "Subject")
+                intent.putExtra(Intent.EXTRA_TEXT, "")
+                startActivity(Intent.createChooser(intent, "Choose an Email client :"))
+//                viewModel.helpClicked()
             }
             tvSupportUs.setOnClickListener {
-                viewModel.supportClicked()
+                goToPlayMarket(activity as MainActivity)
+//                viewModel.supportClicked()
             }
 
         }
         viewModel.nameLiveData.observe(viewLifecycleOwner, nameObserver)
         viewModel.imageLiveData.observe(viewLifecycleOwner,imageObserver)
+
+
+
     }
 
 
     private val changeNameObserver = Observer<Unit> {
-        val dialog = ChangeNameDialog(requireContext(), viewModel.nameLiveData.value!!)
-        dialog.show()
-        dialog.setChangeListener {
-            viewModel.setName(it)
-        }
+
     }
 
     private val nameObserver = Observer<String> {
@@ -96,43 +130,22 @@ class ProfileScreen : Fragment(R.layout.screen_profile) {
     }
 
     private val changeImageObserver = Observer<Unit> {
-        ImagePicker.with(requireActivity())
-            .crop()
-            .cropOval()
-            .maxResultSize(512, 512, true)
-            .provider(ImageProvider.BOTH)
-            .createIntentFromDialog {
-                profileLauncher.launch(it)
-            }
+
 
     }
 
     private val contactObserver = Observer<Unit> {
-        val intent =
-            Intent(
-                Intent.ACTION_SENDTO,
-                Uri.fromParts("mailto", "muhammadalinomonov837@gmail.com", null)
-            )
-        intent.putExtra(Intent.EXTRA_SUBJECT, "Subject")
-        intent.putExtra(Intent.EXTRA_TEXT, "")
-        startActivity(Intent.createChooser(intent, "Choose an Email client :"))
+
     }
 
     private val shareAppObserver = Observer<Unit> {
 
-        val intent = Intent(Intent.ACTION_SEND)
-        intent.type = "text/plain"
-        intent.putExtra(Intent.EXTRA_SUBJECT, "UpTodo")
-        intent.putExtra(
-            Intent.EXTRA_TEXT,
-            "link: https://play.google.com/store/apps/details?id=uz.gita.a5.bookreader"
-        )
-        startActivity(Intent.createChooser(intent, "UpTodo"))
+
     }
 
 
     private val supportObserver = Observer<Unit> {
-        goToPlayMarket(activity as MainActivity)
+
     }
 
     private fun goToPlayMarket(activity: MainActivity) {

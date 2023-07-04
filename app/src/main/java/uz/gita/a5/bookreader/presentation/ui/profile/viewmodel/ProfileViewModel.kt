@@ -7,7 +7,7 @@ interface ProfileViewModel {
 
     val imageLiveData: LiveData<String>
 
-    val changeNameLiveData: LiveData<Unit>
+    /*val changeNameLiveData: LiveData<Unit>
 
     val changeImageLiveData: LiveData<Unit>
 
@@ -15,17 +15,17 @@ interface ProfileViewModel {
 
     val contactLiveData: LiveData<Unit>
 
-    val supportLiveData: LiveData<Unit>
+    val supportLiveData: LiveData<Unit>*/
 
-    fun changeName()
+//    fun changeName()
 
-    fun changeImage()
+    /*fun changeImage()
 
     fun aboutClicked()
 
     fun helpClicked()
 
-    fun supportClicked()
+    fun supportClicked()*/
 
     fun setName(name:String)
 
